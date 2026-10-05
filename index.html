@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos Vía Nómina y Domiciliados | Paulina Espinoza</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#005844',
+                            greenDark: '#003a2d',
+                            greenLight: '#e6f3f0',
+                            gold: '#d4af37',
+                            goldDark: '#997a15',
+                            burgundy: '#6b0f1a',
+                            burgundyDark: '#42080f',
+                            burgundyLight: '#fcf2f4',
+                            accent: '#25D366'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fa-svg { display:inline-block; height:1em; width:auto; overflow:visible; vertical-align:-0.125em; fill:currentColor; flex-shrink:0; }
+        .custom-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #005844;
+            cursor: pointer;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+        .custom-slider::-moz-range-thumb {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: #005844;
+            cursor: pointer;
+            border: 3px solid #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #edd88d 50%, #b8901c 100%);
+        }
+        .hero-pattern {
+            background-color: #003a2d;
+            background-image: radial-gradient(#005844 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-green selection:text-white">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-brand-burgundy text-white py-2 px-4 text-xs sm:text-sm font-heading">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center gap-1.5"><svg class="fa-svg text-brand-gold" viewBox="0 0 512 512" aria-hidden="true"><path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8V444.8C394 378 431.1 230.1 432 141.4L256 66.8l0 0z"/></svg> Trámite 100% Seguro y Sin Anticipos</span>
+                <span class="hidden md:inline-block opacity-75">|</span>
+                <span class="hidden md:flex items-center gap-1.5"><svg class="fa-svg text-brand-gold" viewBox="0 0 512 512" aria-hidden="true"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg> Respuesta en menos de 24 horas</span>
+            </div>
+            <div class="flex items-center space-x-3 ml-auto">
+                <a href="https://wa.me/525429488876?text=Hola%20Paulina,%20requiero%20informaci%C3%B3n%20sobre%20un%20cr%C3%A9dito" target="_blank" class="hover:text-brand-gold transition-colors font-bold flex items-center gap-1">
+                    <svg class="fa-svg text-emerald-400 text-base" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Atención Directa: 54 29 48 88 76
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <!-- Brand Logo / Name -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-green to-brand-greenDark text-white flex items-center justify-center text-2xl font-bold shadow-md group-hover:scale-105 transition-transform">
+                    <svg class="fa-svg text-brand-gold" viewBox="0 0 576 512" aria-hidden="true"><path d="M312 24V34.5c6.4 1.2 12.6 2.7 18.2 4.2c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5c-7.3-.1-14.7 1.7-19.4 4.4c-2.1 1.3-3.1 2.4-3.5 3c-.3 .5-.7 1.2-.7 2.8c0 .3 0 .5 0 .6c.2 .2 .9 1.2 3.3 2.6c5.8 3.5 14.4 6.2 27.4 10.1l.9 .3 0 0c11.1 3.3 25.9 7.8 37.9 15.3c13.7 8.6 26.1 22.9 26.4 44.9c.3 22.5-11.4 38.9-26.7 48.5c-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24V220.6c-9.5-2.3-18.2-5.3-25.6-7.8c-2.1-.7-4.1-1.4-6-2c-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6 .9 5 1.7 7.3 2.5c13.6 4.6 23.4 7.9 33.9 8.3c8 .3 15.1-1.6 19.2-4.1c1.9-1.2 2.8-2.2 3.2-2.9c.4-.6 .9-1.8 .8-4.1l0-.2c0-1 0-2.1-4-4.6c-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4c-13.5-8.1-26.5-22-26.6-44.1c-.1-22.9 12.9-38.6 27.7-47.4c6.4-3.8 13.3-6.4 20.2-8.2V24c0-13.3 10.7-24 24-24s24 10.7 24 24zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"/></svg>
+                </div>
+                <div>
+                    <span class="block text-xl font-heading font-extrabold text-slate-900 leading-tight">Paulina Espinoza</span>
+                    <span class="block text-xs font-semibold text-brand-green tracking-wide">Asesora Financiera Especializada</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center space-x-8 font-heading font-semibold text-sm text-slate-700">
+                <a href="#convenios" class="hover:text-brand-green transition-colors">Convenios y Sectores</a>
+                <a href="#calculadora" class="hover:text-brand-green transition-colors">Calculadora</a>
+                <a href="#beneficios" class="hover:text-brand-green transition-colors">Beneficios</a>
+                <a href="#requisitos" class="hover:text-brand-green transition-colors">Requisitos</a>
+                <a href="#preguntas" class="hover:text-brand-green transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Header Action Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#calculadora" class="bg-slate-100 hover:bg-slate-200 text-slate-800 font-heading font-bold px-4 py-2.5 rounded-xl text-sm transition-colors">
+                    <svg class="fa-svg text-brand-green mr-1" viewBox="0 0 384 512" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM96 64H288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"/></svg> Cotizar
+                </a>
+                <a href="https://wa.me/525429488876?text=Hola%20Paulina%20Espinoza,%20me%20gustar%C3%ADa%20solicitar%20un%20cr%C3%A9dito" target="_blank" class="bg-brand-green hover:bg-brand-greenDark text-white font-heading font-bold px-5 py-2.5 rounded-xl text-sm transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                    <svg class="fa-svg text-lg text-emerald-400" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Contactar
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 hover:text-brand-green focus:outline-none p-2 rounded-lg">
+                <svg class="fa-svg text-2xl" viewBox="0 0 448 512" aria-hidden="true"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 font-heading font-medium">
+            <a href="#convenios" class="block py-2 text-slate-700 hover:text-brand-green border-b border-slate-100">Convenios y Sectores</a>
+            <a href="#calculadora" class="block py-2 text-slate-700 hover:text-brand-green border-b border-slate-100">Calculadora de Crédito</a>
+            <a href="#beneficios" class="block py-2 text-slate-700 hover:text-brand-green border-b border-slate-100">Beneficios</a>
+            <a href="#requisitos" class="block py-2 text-slate-700 hover:text-brand-green border-b border-slate-100">Requisitos</a>
+            <a href="#preguntas" class="block py-2 text-slate-700 hover:text-brand-green border-b border-slate-100">Preguntas Frecuentes</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://wa.me/525429488876?text=Hola%20Paulina%20Espinoza,%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="w-full bg-brand-green text-white text-center font-bold py-3 rounded-xl flex items-center justify-center gap-2 shadow">
+                    <svg class="fa-svg text-xl text-emerald-300" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp: 54 29 48 88 76
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative hero-pattern text-white pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-green/30 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-brand-gold shadow-inner">
+                        <svg class="fa-svg text-brand-gold" viewBox="0 0 512 512" aria-hidden="true"><path d="M211 7.3C205 1 196-1.4 187.6 .8s-14.9 8.9-17.1 17.3L154.7 80.6l-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62L18.1 170.6c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45L7.3 301C1 307-1.4 316 .8 324.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.3-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5L341.4 18.1c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3L256 53.5 211 7.3z"/></svg> Atención Personalizada y Asesoría Gratuita
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight">
+                        Créditos Seguros con Descuento Vía Nómina o Domiciliado
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-emerald-100/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Diseñados especialmente para <strong class="text-white underline decoration-brand-gold">Pensionados, Jubilados y Trabajadores del Sector Público</strong> (IMSS, ISSSTE, PEMEX, SEP, SNTE, GEM, CDMX e IMSS Bienestar).
+                    </p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
+                        <div class="bg-white/10 backdrop-blur border border-white/15 p-3.5 rounded-2xl text-center">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-brand-gold font-heading">$5,000</span>
+                            <span class="text-xs text-emerald-100 uppercase tracking-wider font-semibold">Monto Mínimo</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur border border-white/15 p-3.5 rounded-2xl text-center">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-brand-gold font-heading">12 a 60</span>
+                            <span class="text-xs text-emerald-100 uppercase tracking-wider font-semibold">Meses / Quincenas</span>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1 bg-white/10 backdrop-blur border border-white/15 p-3.5 rounded-2xl text-center">
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-emerald-300 font-heading">&lt; 24 Hrs</span>
+                            <span class="text-xs text-emerald-100 uppercase tracking-wider font-semibold">Respuesta Rápida</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <a href="#calculadora" class="bg-gradient-to-r from-brand-gold to-yellow-500 hover:from-yellow-400 hover:to-brand-gold font-heading font-bold px-8 py-4 rounded-xl text-slate-900 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+                            <svg class="fa-svg text-lg" viewBox="0 0 384 512" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM96 64H288c17.7 0 32 14.3 32 32v32c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32zm32 160a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM96 352a32 32 0 1 1 0-64 32 32 0 1 1 0 64zM64 416c0-17.7 14.3-32 32-32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM192 256a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zm64-64a32 32 0 1 1 0-64 32 32 0 1 1 0 64zm32 64a32 32 0 1 1 -64 0 32 32 0 1 1 64 0zM288 448a32 32 0 1 1 0-64 32 32 0 1 1 0 64z"/></svg> Simular Mi Crédito
+                        </a>
+                        <a href="https://wa.me/525429488876?text=Hola%20Paulina%20Espinoza,%20necesito%20asesor%C3%ADa%20para%20un%20cr%C3%A9dito" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-heading font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2 border border-emerald-400/30">
+                            <svg class="fa-svg text-2xl text-white" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Contactar por WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="pt-2 text-xs text-emerald-200/80 flex items-center justify-center lg:justify-start gap-4">
+                        <span><svg class="fa-svg text-brand-gold mr-1" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Sin cobro de comisión inicial</span>
+                        <span><svg class="fa-svg text-brand-gold mr-1" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Mínimos Requisitos</span>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column Profile & Badge Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border-4 border-brand-gold/30">
+                        <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-brand-burgundy text-white px-6 py-1.5 rounded-full text-xs font-bold font-heading shadow-md tracking-wider uppercase flex items-center gap-1.5">
+                            <svg class="fa-svg text-brand-gold" viewBox="0 0 576 512" aria-hidden="true"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg> Asesora de Confianza
+                        </div>
+
+                        <div class="text-center pt-3">
+                            <div class="relative inline-block">
+                                <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-tr from-brand-green to-emerald-400 p-1 shadow-md">
+                                    <div class="w-full h-full rounded-full bg-slate-100 flex items-center justify-center text-slate-400 overflow-hidden">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7zzk0orlo/FFtIMhwaz7zx9YWUm2WQL+NX7KRm6sV1O59qM1xdn8QNLuThZkz9a6Sx1WC+UNG6sPapcGnqWpJ6o0gaKZuGM0m8etShjycDIppYmmlsjrSZNMB2T60m7nGaQ5NNx3oA5X4hyY8JXHqUP8AKvkfUdf03wto76rqkhVFc7UX7znPQCvqD4wa5p/h/wCHl3qeq3CwW0SHJJ5Y9lHua/Nbx54suvEmsm6YusKkrbwg8KP8TW8Z8sLIwdLnndk/xG+J+veNLwf2hMYbKMnyLGM/Kvu3qa8qu7ye5lKhuO5qbUZmkujDE258Ydh0HtUKQBRg5Ax+dQlbVmqfREMQ2H5Tg/3qsLjaXeQAZxjrmmFCzYVdx9qrysf9VEVzn5nPQew9TUtlDpbkBykSn6t/hSJGWI/if071EZreEECU5I5Y8k/SoV1fyE2WtuAe7NyTUPXYexpJa3MxDbfLHQM3al+y7XKy3US89TzWUbvUrtgrSOc/witGx0K4u5RuVmz1JHSolpuy4py2RZihVXxHfxN7Ywa2tOPlurSHcMY4Oa09K8BNPGrlRnuT1rqtH+H7K6MV3YbIUD1rlnWj3OuGFmcH4g0+Mww3W4s7ruOOBXLi6eByAQp78V7R4m8EXs0QWGNhGi4HFeV6poN1ZXLh4ix78VpRqqWlzOtQlF3sVYNTDDYzL/vYro9B17UdH1BLzTb6SJx/HA3I+orjJIZ4lJUHA7Ci2vWhk4bB9ehrZxT1RzKTW59TaV8ZH1/S4NK8WuBdx/Il6DlZP970NdRb6mlqilMNGwyGU5BFfJlhqbpMHRwHHPXg17L8NfFCfZhbXxNxp4O2Rc5e1/2vdP5VgqfLK5VV88bI9gt9WtpiMsuatq8MgyCKy7jw9FNELixmDRsNysp6j1rNa31OxbjewFanFY6Vox25qFofRTWNb65LDIBcoQO5rt9A1nw/dKqzyRq3+1WdSfIr2NKdNTdrnPG1kY/LGT+FS2+i31zMFhtmJz6V6pZw6DKgMZiP0xWjDHZ20m+GNDiuOWN6JHZDBd2ee3PgXWtYhWGC1VG4yxqa2+CusS48+UKO+BXp+keI1ivyj24Cg9RXZ2mvWMwALqp96854uorpM7fq1OWrPJNM+A+nMgN7NOzexwK1R8C9BQYVXI92r1dbu2ZcpKv51Wk1SJH2+av51m8TPrI1WHp/yniA8WywMy4bg1m3uqNqcmTnFQ3NmWduOc0Wtmynoa/QbI+NbZaspfsjhun417J8PLhp7fO4ke9ePG2Y4xXrvwzTZbkHsa560Va510Jt+6el84A9qTnpVgD5RxTJXRF3McVwncRAkGnZqhLrFjE21p0H41JDqlnKuVlU/jRZiui0XANQ3N3b21pJc3EqxRRqWd2OAAO9I1zC/wBxgc8cV81/tV/E8aJ4VTwNo9yBqOpLmco3zRQ55z6bqaVwueHftGfGaX4h+KZNN0+QjQtPkMcEYOBO46yH29K+btSumjG8ZMsmRGB2HrW1fzY3ZOVQZfnt6Vziie+uZJ2fap6eij0rVLQluzsVYrYxr5jqCx65oMbvw/AJ4H9TV2QhW3SHIH3Qf4qzpnlmBUblU8em73+lQ2WlYrz3GS0NoSY+jSHv/wDWqqbfeBulWJD/ABP3+g7Cr7QyInlrFwvJOO/pULWzO+6Zgo/ujmoKsZjW6eYVjXfz94nrU8OmzTEbkCewrctNOd5VWOIDPOSOa7DS/B1xcOrvjrnGKxnWUTanh3M57w94YM8iM6MTnpivW9B8Kww7S8I6cgrV3w/4dS02E7WxzgV2dja7vmIHJry6+IbZ7GHwqiV7LQ4EVdsYHfpW1a2Ko+WA9hjFTRRhQBjFW1XI4rhcrnoqFiGWxjljKsuR9K47xH4Jsb9C4hBY+1d8p+UAnjvTngzETjIohUcdglSUlqj5y1v4cjy2MUflkdCBXmeueHrnTJds8Jx0Dj+tfYd3pUMoOEzXE+KPBlve2Tq8Qxjrjmu6ji2nqebiMDGS93c+U981q2DyvtXVeFPFNzol/He2+3zc7QrfdkXupHvUHijw7caDqL5iZos8E9BXMtIwfzQcAdh/DXqRanG6PFlF05crPrvwT4xs5bWG3jZktLhS9urnPlP/ABRZ9uo9q7M38Mn8SmvmX4Ya6kl82iTuGFziSFs48uUdD+P3T9a+kbPw02raDb6rp0zFJkzj0PcH8auFNy2OSskncS4itLgfMi/hWXcaOmd0EhVvrVmbSNbs2Pys4HqKqNeXMJxPA6/hQ4SW5kpLoNtrrXtPuQIbp9g7ZzXYaf4w1KBFFyC2K5JdQif+PB9DUguQ7YDA/jWM6MZbo1hWnHZnWP8AECaG5JSNieelUbr4naouTHCwPrmuWuyY5gT3qpI6sMECsfqdNdDT63UfU6VvjB4piBWGYqB2Y1jXHxT8bTTlxfhfbFY0sEbk44NVGtQG60fVKfYPrNTufQF1eGKVty8Z9KZDqaY6V0moaNC0JbFVLXw7FJAzY6V9HzKx5VncoLqkZKg4r174bSLLAWX1rxW907y78RrnrXsvwuQpZkH1rKs046G1DSVj1ToBXO+K7w22kSlZNjYOK6HOBXlHxb1K5stK2wHGTjNcdGPNKx21Zcsbnlc+t6nPrDo94+3ceAfeultdRv44QI7p+nc157YtJNqBZjkk11ySPFCDznFdVWi3sctOsludPH45Hh3RbvU9XuMxW8Zcj19K+IPHOv3niTxhqXiK/kZ5r2QyAsfuJ/CBXs3xc1xnsotDSRlDYnuSD/COi14FeMs7EuMAkyEeijoK5op3szrVrXOR1ksIo7VM+ZId8n49BUUVultbrvGVXoD/ABGrIQ3erPKSTluvoK0k0t7u7CgfIoyT2Aq5NJEw953MCOwlvZ5J3GEXtjilurFY4lVTsGMvI3U/4V2b2cVjYfaJdsasPkj749TXC6tf+bMYouQetczk2zrsktSpK5XEMbEKueDViw0+S4ugAmWPFLpOmy3cvyJk+p5Ar1Pw34WWNkLREk4zxWFWooI2o0nNkPhrweSFmmTJIzzXdW2lKq7I1Awe1bFhp6xQKioB61rRWqrGAE/IV5NSq2e3TopIy7XTyu07MKK14rcIlTpAQMY4qTaVUdD7VzSkdcIpEJTHb9adG20kcj3qTY2c4x9aYUYHGc1maEyHJ3Z59KsxSZBVulU0DDBx2qVOG6cUATsoBHeo5LeKQFXXIIxThg8E1ICCR6UIiSR5T8RPBtvf6XLJBF8wBPSvl/U7CSxu5YWU5Ukc1916jZpcWbRsAdwxXy/8T/Cz2GpSXUSfLnkY7V6uBr68rPHzHD3XMjy/TL6bT9Rhu4HKSRMGUivtb4LeLoNd8LyxI67xiZkz0Y/ewPTNfEDqEkx717l+znr32Px//Z7MdlzERj3617MfdkmeBUXNBo+w18mWP94in8Kgn0XTLpDvhAJ71JCo24JxVnY3l8V1rseejyPXfDqP4rtbK1O0SyBeKl8aeGJPC0NpMhOHYLXQSxl/iHp4Yf8ALYVqfGmMGwsF6jzRXLVSN6bvueO67qHkCItwT/hWP/awIGGq34uiJMIFct5br0zXPPRlpG8dRyeppv8AaJ9axQz55zUgkwOTzUXK5T65vddQ24q1o+rRyWrA9SKwtT09BCSmc1Ho1ncckIxHtXtNKxwxvzFi/mA1fPY16v8ADe5iSA72Arya6t836hgc+9dXpMs9jZeZBJhgKynqrG8NHc98FzCRxIPzryf4tQm809RAdzA9q4i9+Iut2F80RmBA7GnDxZPq0G+6OeOlTClKGqNJVYz91nOaNpdx9uIdcV0epeVY6bLcTkCOJCzZ74pmlXKz3hKrznHSuX+LGpmz0Q2PmFRKCWx1Y9l+nXP4VMqs+bUqFGD2PDPFup3GrarPcu+XuG/AL2H0x/KuC1V/LspSBjedoPtXV37u0ZkP8Z2oPT1/T+dchr7AyrbADbGOo7nvRBGlV2K3hzTWv9SSBeNxy7ei+lejto+labYyPeMvo0SDnjnB/Tj3rlPBUZime7DBSOBnuTW5rkqwadJIH/dRn5d3VnPOawrPWxrh1pc4HxZrD3F5JIw27j8if3FHQVytlYy3d6FAySee9as9tNe3jTPkru4z3r0HwF4LlurtbqWHAxn5h0rKpNU43N6dN1ZWRP4V8MNHDGzQjefb7tel6dpBhhAxtHriuh03w9FaQbvL54yauiy5AC4FeHWrOTPfoUFBGXBaBRgirIiC1bkVYxgDkVmXOpWtuwMs6L+Nc+rOvRFvC5GQaUIDzisddesGYg3K4HfNWY9WtZGCpMj/AEOaTiyozRe246GkZFJyBUa3SsTyKeJcsADx71mWBTjjOaRBnjFTgjbjPNMAAfAxwaAHY4BAGafDkqc96H2leOT0NSRLwBQIV490eP515x8QvDaahpE2U52ntXqMKEnk/Wqer6Yl3YuNuTitKc3F3MasFNNHwDqtrJaatLbOMMjlcV2Pwm1B9O+KOkTggKZxG2emDU/xb8PtpPjJpBHtWXnpXP8AhUmHxLZOrlMTod3pzX09OfNTUj5OtDkqOJ+gyu+1GBPIrWtSzQ/N6d6o6dF5unW7nnKA5rTSPamPauz2sbHlezdzi2XPxIsOOBJVz4xbpVsEQFsSZ4rQl05BqqXijEiHINLqkP8AackRul3bDwK5qkrmsI8p4b4ktZp5YgI2OPasH+yrk9IW/KvcdV0q0Eo/dDj2rKawt1H+pWuWbuzSOh5H/Y12ekJpp0G+Jz5R/KvWjbQr0jX8qZ5MfZVqDXQ9d0TTG1NMyc8967aw0C0toSGUA1wug62tnMIc454rsn1dvsok55r06rkZUopIztX8OQzXAkiBH0pE0iWCwZQcjFWJtYVIS5NRp4mtpINrFT2rOLkaSUTyTxRZ3C6s52tgntV7SEcWYBHau6a10/VbggqpNRXui29pb5jAXiuyNdNKLOR4fXmTMjRNluzTSHCqSxJ7CvHfiJr7a7rzsoZY0JCr/n2xXoevasdM0S48th83B+leK31w0jT3UjDLMT68mueo7yOuirRMC+yboZPCLzj16muNvh5t2xJ6nNdbdEiB93Ujn8a5W6A8859auOhjOV2df4Q0l5dOkv50KwRjCKP4zWR4tuZJmihVeEB+XGAPc/l+ldlot3bx+E4xK6KMdGYDIHb2H864q4Rtb8RqkfzRK2Cw6MfQD0Fckm3Jt9Dtg/dUUWvCvhmTUrtflLoOSQOp9q+gPDXhkWdlGEiAGMnNJ8P/AAWttpUdw8YBYDgivSYtL8i3KgKf4iAf0rxsRVdSR7+GoqnEwPsYWBgFwAORXP67qtro9qzSndIR8qd67PULSaO0MVsN878IPSuMvfCUrXT3WpyLNIwwRnIFcjS6napN6I8w1PxdrF/O6afauqdAxHBrkNRh8Qsxkn80nr8vavZ5LC0tiVihQAcdKxL+K3d8YyPQDirjVUXoiZUW92eIX13qNqfmkkGOoXJqtF4xvbRyQzqfU8V6xqFhZyow8mIgdsVwuueEbS6DywkI/JC9q6IVYy3RyzpzjsyzpHxLXy9l3IG9STivRdJ8Q22pwh4ZgwA6A1833ml3VhcPHKhCduK0/C3iC+0PUFUyM0Tdie1OphoyV4ipYqUZWmfUVtMHj2k81OrqWPr61y2kaoLm0jmB+8oOK24ZmbHPGa82UbOx6kZJ6mgzAqckU6CVVkwT0qtI3y9uDVOS6SJC8jhQOc5pqNxSdjo4rgB+MGrX2mPGHIAxXk2q/EW2tJGitD5jDjJ9a55/iJq8837oYGcYzmumnhZNXOGri4R0HftA+GVu9ATVbVNzwNlsehrwfwtb7/EdkCuQZFJH0Ir3bUNY1HW9BntrlcpKhV1PNePaLaNZ+K4I2G0xzGvXwt403Fni4u0pqS6n3/pSK2mxbRgbFIHsQDWh5fyVkeF7lb3w5ZXSsCsttGcj2GP6VvYO0muqGx5UlZsyZE/ekVBJGd4+tXZAPONROPnAoZNzn9VTM1Y8kdb2qKBcYrImGBwK557jRmuvXioGQ571ccdTURHNQUmdmsSpqSHpzXbSJu0dOvTrXn9zJOGMkSkuuSKi8O/ElLvWj4fvlaKdTgBu/wBK9CrUjBpS6kQaWjO0u4idNbkn5e9ceHZXK7GHOM131yoawOOQR2rnhYKwJP8AKtKduoqiJvDEBN4SWbmtTxZN9n08AOQcVzX/AAkll4akZ7qVRiqj+IZfESzaiIX+zRqfLH949q55YiCq8l9S4v3LHmXibUbie8eAswRRhge5rir590QA6MentXQaxKfMlkHV3PB6mubuQHk2A9MJWsfedzWfuxUUY1+zLagngvziuZmH7w5/WusvEW4uSvQDgD6cVzOpQNBcN1KmtLmLi9x326drAWwk2qeuO1dh8ONLXUvFMMJHyA8nFcJEBnk59K9q+DFgG1+ORh1POK48XLlg7Hdgo81RH0rpunJHokKxqF2gcYqSZSqswGM+36VqRqI7JYxgYrNvyIiV5BB5+leDY+ii7jraG3SB5pEVj1Gex9q4rxHfKrOd/wA3QD0rX1bWYrGzJJG1uM+9eZ+IdWDxvM7/AC1E3fRG9NW1ZlanqAjZ2LVx2oeI7S2JE1wic8c81kaxrN3qt+bWxfahBPmE8YrzbWvEOj6VdRmKT7ZOrFZyTnHuPpWtKhzEVsSonpLeK7OdwsUE8ueMolVpNWtHl2zeZD/10XGK8ss/iPe20scghVowzZyDypx/hWlp/inU283ULzTrh7O4k3CTaXVV71u8K0cv1yMtjtruwgvoiHRXU9GFYUfhNVugwYbVPHFT6TrNtKgu7HcbJ22shPKn1A7V0SzRM6qP4qz1hoWkp6m34fDRWiREEKvAz3rsrTlFOTXOaRB+5G3BNdZZwkoACOO1clTVndS2HzHbGT0rzrxvqtyYBYWZYeZ99h2r0HXH+yaeSMcjtXmGparb28haRwWJ4HU1tho63sc+KnZWuc1Y+G7medfMUnPrXoPhzwlpcBWS6iWd88D+EVyLeImiwQsa56bjkmr+keML3zlQNC7E4+9jaK9CSqNaHlwnSi9T2SHTdEOlyW5soFyh/hHFfNeo6THbfFKW327Y1uOPYGvX4vEz6g6WMKuLhuFH9fpXn99Gbv4jTXMgDfvQCV6YHFPCwkm+YnGzg1Gx9GfB+c3fws05nbc8YeJj9HbH6V3x6EY7V5h8EJceE7+yJB8m7YjB7GvUWHB4rup7Hi1F7zMuQfvjTGHzippBiWo3OH5okyDD1IAzmseUVZ1u+8u6K1g/2puY9sVhKWokWXH51HtFMFwZRkCngsRSsmM7iyEU95H8wYE8gVxvxT0BfDd5aeLLCPDxuN2B1Brzbw58Vr2x1gNdrvty3DKen1r2XxD4k03xj8M5P3ZYbPTkGuXE46liqMvZPVGUJqUWa/h3xvp2seH4meVQ5UZU9Qa1YLq3lDeVIGGM18+aFeLDE0aqQy8Z6V1Xh7X5YUmhaUmaRiqAmuHKeII4j91P4kNybRNe6a3iv4pxaTuYwp88gHfnpXbfEOOz8M+E7TSrNdjTHDBODtAq34A8KnSL6TW9Rcfarj5i57D0Fcp8UdWTUPFIVSGhtxsXHc9z/KvSw9BqpKpNe8/yOrDxVrs8u1CQyXmDgCMZIHQVhMcsGPTlzWpdthppeu44FZl3hIyP+A160VZGc3dmUf8AXnviq13afaSUU8kZFaFtD5ru/TnFE7CFxtTLjv7Vz1Z2eh10qd46nMtYTwvgqOuK99+C9siXaEjJxya8kYiWUqPunmvZfg9hZF9zXDjKrlGx6OBoJT0Pojyi1tGSOg6Guc12fylY43Fh3rq7Zt1v9BXKa9DvaR2HJ7ivOk7I9OmveseZ+J7p/spiZT1yAD0rzTXNRnltzEsDvjqDXqus2XnscjI965y4srdEKeWpPrisoySdzolFtHz1rdl4lv1lttOP2eJs5C8E/Q1m3fhfQYPB8Zn0+5F/DJulyu4yDvzXud5p9qZ/lTa3txWJqWkxz27xiXG4jLY+YfQ1208QkcFXC8+584Ssqas0iw7bcfKsO3B619DeAra2svACfa0ijRgziK5AHWsqfwzA8ufMUkD5WZASKeNDJANxcu6gY2scD8q1niOdWuYUsH7N3ZymqwW9lqks+l7WhkYl4Y+30re0tDcQQSlWDYHysOlasVlBGCsUKknjpWpZ6W2OVGSc4rlnUO2NN30NnQ03RAEAYrsLGEZAweawNMtfJj5rqtPRflLA1xVJHfCNkc78QIZItFi8oHLHFfP/AIgaVrxfLchCdpfvmvqjxJpa32gfd3bDkV49qPheye5Ja2CYOeeQa7sBVjHc83MKMpbHmOnadBcMwlZ94+7k5LV68nwzsLrwVFdxhobtYfMftnAzzWbb+ErQSJPDbr5inI54rphbeItQt2tprkmLugOARXpVKyex5VPCuN7nHeGNK1KKWTVRvZLeM7XBGPbNVNLtmutdQtyXbkn3Nep6fpjWmjzWZhKpIu0kHocdvWvPNIjNtrEbMPuSAEH/AHq1pyTuzlrQcWkex/C6wOk+IPEWllxmOVSAPQ5Of1r04r8hrgdHC2/xdv5RhFubdXIz1+Uf/Xre1zXzppBAyp61cHdHJWdncuysBPjPNZl1fIl0I88mueTxQLq8JB4PAGakEr3N9vI7UqrdtDnU77GD4q1SK1uyX9K4mHV7i9vtkKkIDVrxjdG51t7YDGOKZpFksCBscmuSauyoanTWsxWEButXFf5c1mwqdwzxWgoGwVcdi3ofNUtvrGnaobC4s5Y3LYG4cGvU/Bni3VbBIfD95aqwlIRZCeVz611Hxcn8P2WnJe24iM4IK4AzXmWhrrfiDxAk+lQGRoxuOO1fM5hhnhavs6Lvc4qcbO57J4k8AXmg6Wmv2x82FuZVHbPesDT9Fm1GA6/b3Pl/ZjvVfXHrV+/+L8sPhGbwzrFq636J5ZVhwfevNYPFF1BoNzYxXRj80EEKexrz3h8Ph8VGvT3tqvM3k+x2Vx8aNb12/tdA05WhPmiJ5R0wDzj8q1PEEqsxYEk9dxPJriPhv4WX7U+s3D4WIZTP8TGuk1SQPdGPd8rN+QHWvsMsnOsnVn12OuleNO7MK6OZUjHbk1l3bAvz0FaDMJLqUrzxgVhanJsLKpzg8/WvbsY+Zcs9qW7sexJqrcsJA7Y6cVLDIPID9UkHJHY1XNvMzOYxuUda8+ppJnrUleKL9jZI1gG/jIJ4r0r4YXItr9Ii2MHFedaBcpJG0LDEkByQfQ12XhmUWetZBwN+a87EO6PVwsVGSZ9VaZJ5unAk8msXXUVLdm9am8MXgm0VDvycc1D4lkxanC5OOPauWT9064xtM8+1JgVYJ2Ga5a5TIJOcmtu/kKqw53MeawpHwSvZa5rnYomFeJwc5rHmhkwCoIH1ro5V8wnjj1qqbNpDyB1qlOxMqRzMkEmSOc/WkWxkl9SK6UaWp5YdaniskjGBiq9qiPYsxrHSlQbpABWvBDGJgAPyqTGDhenoangjUSBsciocmy1FIkEZLAAECtuxyAA1ZyqGkBFadmvA461PKXc6GJFuNPePrx0ri9W0ffM2AQR+tdlpwYgKRn8aTULQOgcL0OD7U4S5XoZ1IqSszzaK0eGbC5HPetuzkKuFdQMd8VsTWEbj7oyO4qulgY5Mg5z2Ndaqcxxyp22Ib+6/0dRGgwpzkVweqWccXiQi2+7OQ+MfdOckV6QbTfEQy9RXKanarB4ig3LkIu4j15ruw0+h5uOp6XOpuUitfH2iXJLAT2YUsT1IBpniV5ru0aG2O4kVF4k3TvoNzA+0RIwz6+g/WqkOpR28cltdkLMeAG7V1RlbQ+fxGtjlNIW+t9VZLg5VTnPpW7N4vsrO/jtFbLsMAVkmylN3KVuQwc54PIrFl0mF/EcMud0ikkmnJ6HPHS4zVnluvE7OFJVua6O0tgsa4Pas64wb8pBDyABnFaEReFAGbJ9Kx3ZrDRGmkfA5qyo+Xis5LpEKiRgM+tTteQZ5kUfjV2GeM+N49Nn8OQ3YvpJbgDOC+efpWx8IfFtv4bvJRdRgiZRjPasrU9Dj+3Cynt3SYSBTGV5Fekaj8JNNj8H22pRNLbyIA2Tx+dfM4WvPEy9pFWce5ios8r8ePq/iH4iXF3p8BIc7gF7Cqmm6TcSzMt27LIp+ZT2rrNOvksPFAsLOIXUzfIT1r1vw58NrPUvDuo67q0IhkQFj2xjpXRLC+1fNFam1KndnMeH4Tp/hxIC4DEFjnp0rG1GYlpJA3sK2tSmWC08qMYBO1fpXNajJsVYMYb7zE+9fS4OkqcFFHTU0jYqxyCKCaXH3RkfU8VzV9LlsE9STW3fSrHpiIh5k+Y/hXLXc3zNzXYjlltY0tFuxLE9o/JHIye1dRo9uY1dmAII4BrzW1v2s9TinB43YP0r0DS7h9S1RLNCUiOSXU84xmvPxkGtj1sBUTVmab2UMF150KKpcYbFaFixiuVf1NV08tNLRpWw6jnnoadbyho1YH3ryJN9T3YKzPoLwLqPmaSiBugFb2sSKbZhkYII6V5j4B1MIjQM3fIrvb+586zwWx71zt20OtK7ucHqEZUuMcVgSo/PpXXXkG4FscnNYF4qxcZzisWdiRklOx49aUKOuDTpHXB/nUHnAHngdqRTRKzdgKikcKwyKZJOAM5rOvr0RxHBy2OmaOUiTsF3fokoVMMfY1etHaVQR6da4nz5Hu9zk4LAV6RptvbpZo/Uha1lHlRjB87JIY3Axzk9D6Vp2/wAvBJNUPtcMRwT3qWLUIWXaTge1SkynY6O0lCnPatWHbdQPGvLgZC+tchBf4kwGBFb2gzy3WuwQxAl2YDim4MzbKP2hWlYA8g4Iq2katg+tavxB8LvoFzHqcSFYpW2vjpn1rnrG6D45rRRaMedSWhoLDkEbR9a4rxXE8Xi6OJRn9yOa9Bh5QnHauQ8Ro1z4rj2ISzQBffOa9HCrU8vH/CM1ATT6ZorKwWONtzf7ShgP61m+P9JDRtfWZO5Tk7a2NUsLg3mh2kWUXewYDocdv0qG8k2mSC66c9a7VC6PmcQ9kefaQyXiG4FyUkThgTQDKmto6EMp6471l6pGYby5awbaMk4FYmheIbiHXfstyCW5xmsVKzsyIx0PRpiIyXUBSeSapteKEZw2StZ8l/Pe3DRk7EHvWZqdz9li/dNweDVN6lpaEmr675sI8piGX0rOTUNSmQOHODWfbRPdz5IJBNdLb6ei26imB7R4i8K6XH8V7PXXt08gt+8BHH1rr/iUdAm+GV1BBcJETCQGU4wccVL8QNBun8LvJZR4ljBI5ryfxPo82ufDJWe8kSdQNwJ7jtXPVwcaKk4rcarWvFo8G0G9vNC8QjUli81lY8nnIr3TTPHuoaz4DlhKeQk020gfxD0rifDmh2l9YPBdBBKBtHvWwkUOm2i2MI+SAFOezHqa48ujJ1HrodlOCS5ireXCy6kobGxOfwFcjqNybi+lZScu21F9B2rQ1O+CPJsOc8A/1rBgnUXpmPKxKW/4F2r6OCsjCpK7sQ6vOElEQORGu38q5m5nBY5q5fXJkmdic5rDuZRk4/KtFsYy1ZDcv1xXS6L42sdKU3F3FK88SYijQcEjoc9veuPuJcDNZc8nJyaicFNWZdOo6bvE6PU/H2s3VpJboyxK5OSvWvQfAusnUvDlu0z7pFGxiT3FeFvIWzXbfDjVzbalJYO2Ff5l+tcWKw8fZ+6j0MHi5uqudn0v4WvDDegE9RXpf23zYVDEgYrxjQLrdPE+cHvXpEd1uhUEk8V89PRn1tGzRqXEqupIPbvXKai/GQc1pPe5U5B6ViXsm5S33VFQzoTsZk0+GI5wKqvOx79f0psznefTP51ATng9B2osJzJJJuMA8+tUJomlkANWFAYk9fT2qxDDl8kc5qo6GMpXMy40zdbER8P1BpY9fu7a2WGQOCvHA4NdGLceVjGe9Up9OikByuOa0Uk9zLWOqOXuLzWbt90N/wCQufuqv+NWLXUNStdvmT+eO+RitJrFVPC5FOSw3LgoK2i0ZPmvc17CaeZEkVXJPoK9E8Is+iM/iS8QyeQP3UJ4LyHp+FcBpTy2wCCRtvTFd1psj3FjHA/KA7ufWpemo3K6sanijxTqvijw3Fa3sSRsJPNbacgegrkrJXiuBnOe/Fd1DpXmwZUZyOAKw7zTGt7onbjmnFuT1M2lHYvWqs9sflPPasaxh+1+OXEgykLBQfoK66wtXh015+4XK59a5zQpF3avfIg8tCRG56kjivRw0bXZ5OOqXViPWdVs9L1y0+1SLtjQtz6tXPeJL3T7uwe4tpVyRnivPfiRr97fawdOgUhwNzMOx6AflisnQLTVLW1L6vcu0TDoTXRCbvZbHz1fc53UNVurbXJPLy6E81WtPPvPEiXaRgKo6Vc8Qx2sN8z2z7gaTwtMqaizSvkYyBXO1+8sTF6FuabV5b1/JiZUHeqVy948gjnz1rqLnXbWPfGAoNc3c38UtxvIHWtXE0TNXS1WMDIwa3UnXYORXCnWH+0hYa1Yb4mEF25NVFXG2ek3XxV+I0upppGs6dBbrNwSrZxWfrOq3YiFibgop5btmsfRvEZ8d/Ha1gtT5lngnCiur+KujnSdSAgt22kdQK4M0rSXzOyjQi5anPeGrZRqkl0XLRwAsAD1NGt3gUeWjDc3XHXPep9Mh/srw/59xlSy73DcdelcjqepvLJJc5wTxGo7D1roy2hyU02bVrQ0RnardjdsUkqvGfWsy5nFvYBAcSSfMx9uwppcXFz85IReWNZep3YkuGOe/A9BXrHB5lS5nIBO761jzykk/wCNSzz7g3PFZzyZXr3pkpBcy5SsmaQk4Bq3dTADBNZhYs570rjsOwSpqfRr57DXra53YAcZ+lMZdlpnnB61XijEkLuD8w5Wom000bwhytM+l/DeoB4o3DcHBFeoWV2ZLRefxr558EauZdOt97nIUA17Rod8r2wBbnHevmMVDlkz7DBVOaKOhkbLjB7VQvGJjwDjHSpzKCmc9aqTtuTGQfSuVM7mjKdVDnIyajMPzZ7VceIA4H41Wnl8r5QR9atGMhpKRxnoKmtSMg561iXt8F5Lgc9qgtvEtgsvlPfQqR2ZwK1UG1oZOdnY7dSNoJpWCngDrXOL4o0uMb5L2Mgdgc1Sm8e2quRbQl8fxHoaFSkUk2dZ9m3HhKkS0KtytcDL4v1K5kyknlL/AHVFWrTxRqMPLTGQZ/iGa3jRlYTpnewQEMPl6e1ddosZ2gDk56eteXDxbdTwZVFTA5YDNdL4Zu9SvdQVYLtty8sM9qfsn1IcD3TQNNaSJXdcKfTtWLrUMZ8RNaqANoyR6VCvxQtNKt5NKS1F1fRrjzIz8gOO/vXPaZqU91qM97cOXllILH8e1aKnZHBKUuazNbxhqJ0bRI4ovl3qXdj/AAr0H/jxFcSl/JF4FMVpEzSnMzsPQdM/WpPiNqz6t4ht9FtWyp2o5Hrjn+dbl1pU0PgmK10tUE0hAdmH3h6U8RjaWDhH2j+I8nEJzbsfPmranE10bq4QLMGyxIratdQg1fSBGuPu8V0/jvwz4Us/DO24uYxqkg5Xd3+leXacZ9FidhHJJEvJYDgV0YXH0qycoPQ8arScXZ7lDXtNFqXZnzk8ZNZWkl4r0uDxiptd16C+nKI+T6VFor7hIWU4A70R1m2TBaDby5Ml020nrUqwtLa5XOahVInu5GY4Ga0bO7tV+UMOK1vdnQo6lSGzaH5n61bQkL1Iq3NcWzoTuxWPJrOmRylHukDDsTXVTStqTJM6P9n8TWnxVjnaIhNmMkdOa+i/Hvl6jqIlkRSoI465qvLoHhfwrMZEFykw+VW+VVf0+6K4HxJ4hjuZ5LqHMcMYKB1YkMf4jXm16KryTb0R7FJcidzA8V6hHI5tgwSMZeT6dhXm9/emSRjnA6ADsKva7rMlxIwc7ZH+YjvjsDXMGffLuY/KK9OjHlicNad3Ytyy+RabW4d+T7CucurndIwB6VZ1C84PzE8YrBknLKzGtrmLFklyh5qq0mXAP41EZf3h54qLfgMxP0+lDZJFeSkzbD1qKAYYHGcHmmRnzpy55p8W8uyKDzxxUvQ1hHqS3TgRhMd84HarGnWTy2izBevNTSWKiziOR83X1rpLW08izWML8jDge4rlq1LKyO2lSu9RPCl0beWS2zhkbcB7GvZPD+pghec5614PNKbDV47hcqM4b6V6NoeolUjkRgVPNediYcyuethanK7Hs0dwHiB3U7eCP5VzmnagssC4ftWkLkdjXkuNnY9lTui08gweetZt98wY8fhUj3HyZyagdgy4I61SFJ6GFc6e92Chztx1rHufAVjdxl1j2SgZDf4130EClOV5NSCEIcBQRW8arWxzez1ueUv4UvrE4dWMfYg8VNHpMhwUkx2xXqpgjZMMoYEcg81mXOg20nzwho29uldEarZvCcUrM4mHSLksB54+hq8ukamM7GVh6mtd9Ku4n+RN/ptNTQtcIdkitwfTpWqmzS0GinYaZqJG13VM8V3vg/QtRudUFpb3UgMigSeVx8ue59KwLQSsyjYSSewr3n4VaDLFGt3NGsR2kE/xMD2puVznqyjTi2jL1DwZDo1kqRgfOS5bueazLTy7USSP8qxKXY+wr17XLKG4nLYwqLycV4P431GK2kfRLVw0rHdNt7DstEIuTseVVrac7MHSpmvvEV3qk5wsW5192PCj8s1vah45tLjwYtlDdGC7hYAsB+lcF4pupdD0CyjjuRE0hM8uDjIxwK8uvtZ8SX1lHIreTazy5EmMdPevnM5ftsQ10irHlTk72PRvHVkuq6lpd0L5Y5XIUqx6+9drLpWnaV8N7jRzEk97OnyS4zknpXlFxrMd94bRWtmnuoMbXQ5JIrudH8cPdeBBaHSpftagKJHU/LXl0cRWnTVPaMWHsot3e5yc3wM1jR7JdZR/tyspeRR/B3ribW5dtTnt0i2qvymvaNa+Jd3YeEv7FK/vJk2tJnpXkenQp9quHUhieSfWvqssrYqon7dW7ehx1qcE/dMS5Fz5zrCpIz1qxa2MqRgkZJ981V8S6Vruva/pHg7w2/l3t9ukZgcZx6mn3H7O/wAb7AjypXkB/uTGvep4eUveJTjHdmkbWby2Gx+led6p4bu5tUkkBmGTnjNdHL8Kfj1Yk/6JeNj0fNUZvCHx0glMcmkXxYf7ANaRw9SLKdSEla59O+IfGyX3hJYZ1xNkxlmOSPevL9d1d7XRk35VQPlB4JPUDH6/lVu8nh13X5nTMNlC25z2x3rzzxPrSarrEj25ItkysefT1/GuelDU76s+WJXe7aeSSd2yT0981Vmn8seWG56saiSTZE0z8KBn8fSsq6uyls0j53yHgegrsucSXVkd9es7EKevAqlNMUiC5qsZCWyWzUU8mWxTIaFabLYzTJpj5ZUHk1FnJ6+9RyMWUtzRcaiXtLjEgLZzxWlpdssjSORgkkCofD8PmowzwBzW5pFvujKgKCGOa5qk9TspQukJDb+dp8iD78ZNdHpii5sI8AZX1rFsMJqtxAeCwzWloE3k3MlszDcGOF9RmuWbO6mtSl4g03MTOAR1qr4V1zYv2ad8FTt5Ndxe26T2xYrlWGCRXler6fNomttNGGMEjZDY6H0qVaa5WXL3HzI9r0fU9rKA3FdXHdK8e7PJrxXw74gUhUkfmvRNO1NXRfmBFefWpWPSoVU1Y6tZWORkYHSp4Ruwx5PvWTBc9MOCDWlb3AYgdRWFrHTe5qQE7RzgVYGGPPQVUjO49cVZUMT60gHZ2+3uaGYH7pxUwhDEBjUq24Y528emK0ixOJQCgnHOalEZJyOfwq6tkCcAcdxVuK0A+XbWqZk4FjR7cNOmV+Y47V7P4WJsbNV3fOwGAa8z0izAlRhkkc4r07w+jS3gUKcKM+1UndmFVaalnxrrtt4c8DXWrXRBfYRGueWbsK+VYbma5uZ9WvHZ5Jptxb9cV3nxr8WNrfi9dAs5M2Vhw4HRpO/5V5w7kW8duDxnt2r18PRtG76ngV63NKy2RuRaX4f8ZajHa+Ibkx7CXjQNjI9Km+M+ieENP+CqLo08cE1oQyAEBmrxr4panfeH73R9Q0+R0lVWHynG4EisueG78eRGJtQuIrxIw3lSMdrV8nmOClHFuq5e7cIyTjZ7ieAvFtvFfwzsjPIv/LM9DXtWrfFXQtF8HSXjaYpkYYKKvevAF8M33g3VInuryCSWRdwjTnFbM9z/AGrZRwTKGTOWGOlc9XC0a1XmT90unKUVYqanca9r9o+s2EcssbvkRj+HPak0CbVbK6mh1OCSCQgEK4xmus8N+KtB0n/Qp50jROcEcZrfvr7wh4oia8tJw+oKwHA4xXt4THVlVVKVP3e5hUoR5eZPUwfh54l8N6N+1Hb6h4qvhbWtrZ7UYjIDHH5V9lWXxF+H19bi4s9ZjeJujYODX5vT6dd+JPiVq01rGzJFIUyvtXUWlx4/0KyWHTLu4Ea8CIxgivvsHlVWtQVSMX5HzuMzGFGt7JyS9T9AE8feBJpfK/tvT9/91pFB/I1oDXfB8g3fb9Ob381a+Bfhx4H1X4l/GuysfEv2mGO5JaaWMFOAO1fTF9+yP4Uurxph4i1mMEY2rIcD9azxGG9hLlm2ma0a7qrmp6o+ada1STSvD402EFJroFnOeQvTmuDldnljtoxycZ9KvanqEl9e3F9MxBJ4B5x6CshH2BpuTI/yqD2FeJBcqPbm3Jlq6nEkvkxZ8mPqemcVz9/d/aJy3YcAVcvrgQweUv3m6msVnyCe3SqiupEn0JDKNgY8AUx3LsWbgCoy43rkfLSuV3kjgdapuxKQ1MtIccj0qUqTCcDjpTbNC90uRwTWoLUHS3lx0YispT1NYQbRf8KqWjbd710GjxMFlHGd7CsjwihWWVCMgc81uaQoGo3MW8DDk47VyVHqehRjojPuXey8QQTOThm2sfY1o6hCLTUYdTXKhByR3zWb4riKQGQEhlOQQK6PTBFrXh6NJSG3IB071m9rmsd7GxZTpc2sb5+Rhmq2saXb3dm6PFvVl5qlok32Vn0yfIeE4XP8S9jXQRyBxhsEHjArJ6O6N1qrM8Zv7W40PUQuWMRPyN7eldRoPifbtjkbiuo1nQ7TVLJ45I+ucEDlfevLNT0u60TUPKcsVP3ZOgIrVJVNzD3qTutj2nT9XjljBSQHPbNb1tfrheenrXgen65c2rgrIcD3rstM8aRNtSd9p9TXPPDvodUMWmeyWuoIxxnmtiO6XI+brXmVjrtpOoMU659c1v2mskYEgBHZga55UGjqhiV3O+ikBXOfwq8kqheBzXIWerIwGHH51rxaijdSOlZ8jRsqyfU30lTPvVqJ8nmsCG7BOTWjbz72AB5PvVoJSR2uhKZbhEXncdtdr4k1228BeBbnU2dftjL5cEZ7uelcLo2o2ulxm/umVIol3NmvMvGnjW78ZeIGlcstlESsER9P7x9zXXhKLnK/Q8rMcQoRt1MZ5pruaW7uH8y4mcs7HuSc0x02XiAjIDD8fWnQ8LnFWJot99EgzksP1r3NtD52/U8k+PFrqcPiDSrX7HMcRCQlAWAycisTStcXT54r27gnaQJs2IhBr7J8PaTp2t6Nc3Oo6fDIyy7FDrnAAxUV34J8Om7DHSLbP+5XzeOnGUnGR61DCOceZM+QNOg1DxV4luLiKyuQSMRCQHir1lqyaC72F7aeZcKxEntX1zZ6BpNnMEgsYImbgEL61zWu/sx6Jq1/LqaalcRTzneQDwCaxoRoTdqi0RVXCVIL3Hdnxn4glWbWJJYV2o5yFrq/h4WhkuZzwqIXP4CvY9Y/ZMvnlMlnrxOOgdQa5XXvhH4i+GfgTWtWv7iKaEQFQV4PPFe3SxNFtRizz5YSrFNtHj3hTVtSg1bVLyyJw8rucEA9a6i48e69ZxK5g3KepkA61xXhJE/sqR5DHudgMOSM/jVzWIHVxIsieWeNiPur7zAYyvRoxjTm0j5HHYOhXrylUimz6b/Za1q98UfE64nnt0RbW3LBh6nivsJhqIbjyyPrXyb+xVpbxw+INWkGQXSJT7AZr62N3bknKZNeTmWJq163PN3Z6GAw9OhS5aasj8pZZQdPywHlI/yk9WP+FU5ZfLh8x8bz+lSTyRykyJkW0XyoD396yL24M0n4Yx6V4Sd2e69EQXEzSOZCev6VSkk42gmpLljvC5HTHFVznJGfxq72M9y0HRoAAOf5UyV0MQXoByTUSkqPaozIjOUYY75qHqy1ojY0kbtPuJcZKnAPpW4YlTw7Gf73JzWToH/IEuwByWxzW+9u402JZWACL0Fc03qd1GPui+HE8vUWBb5SBW1bQi28VzcHEqK35VR0GEJehgAR3rZv/wB14htpeivlP0rnk9TphGyKviaCKbTJRGSeOap+E7orYCAsQVwR9DXQahbxzWxUrzjt34rkdOP2R4pskKrmFz6ZPFJO6sU1aVzstQszdxpd2h23MY4Pr7Gm6ZqizZilxHOnDoaW3uWTaVOTRdWEV6ftEDeVcqOHxwfal5M180ai3K5AIOOtQXen2eoRlLqKOQH1FY1pqLRSm3vVMc44Gfun3BrXSYjpg5/nS22C6ZyOp+AR5zS6dP5eRnynGR+Fc9ceHNasuTamRR3jOa9aWXcu/OOOc9qVooiuQvUc5q41WtzGVGL1PIYItTicERToR7EYrcstU12IhY7iX6Hmu4OmLKx3KMdc4p0ekwxrhI168t3rZVk+hg6MlszKs9Y8QqFy8eTxyuK2bbxRrdrJ/pMKun+yuKkh05cgYPB9K17TT0dgzL+lJyg+gcs1szc0HWjqKAmGRPXNdVb6gkDjETM3vwDXP2EcNmoIUAAU3WPEdrZQlYyHnIwFHb61mqSk9EauvKMfeZb8R+IZpYTbyTZY9EXoorCseXHPBrBS6lubkyysWZjnNbto21A3c8V6VKChGx49aq6krs2Ldd+4diQBWkFV7xH2/wCrbafw5qnZR/uVc+taWnKZJ7hWGSUJH1qm+pmux6v4MTHg9ZNjASOTkjqfWrlwoNx9KreCZ5JPCZtpDnysbR6A1NdSiNmJr5bHP96z6bB/wkQJHv1KNR/fGK9EKn7OgPUKK8/0Ui71+FB2bNekSqoUDPauem7XZtNXsZjg5rwP9q/VPsPwLuLTcA11KsY/OvoN4x0r5F/bN1bZYaFoitgzSmQgegFdWAi54iKOfGzUaEmfOuj2xtfDluUeVWZixHl7lqjcJL9pd3VsE9Su0V0ttCBplrFHA4KxZJil6n1xWbqss0c4td8uDgssmCRX6jCPKtD84lUvJn3D+yRo32H4Im/ZMNdXDv8AUA4r3ZWiYEmEZzXn3wFtI9H+AmgW8vyl7cOc+/NemrNZFc7lrw683Ko2evRjaCR+Qt5cq7+THgRp97HrWc7clyxxmnfcxHn5j8zVWupMuFFeatD0nqQuxaUtnqeKDgKT+ppMDcecAUr21xJH5ojcIDgcUmwURqsXcIoJ9vWq93FNbzbHQocZAIxXp3w60/TrhZFvmtoXjw26UA5+la3xS0vTJPC0d9ZvaOyMPniI3EfTHSs1VtK1jV0rxvc888NFm018ZyZOa7iWBP7Jwo685Ncf4PRJoXiPP7zoD6iuylLW0QieP92RgEmsKz947cMvcJdIiKzrgEE9R7VJ4lcwfY5g2Nk6c/U0/S/mlVgwY+3pUHi9lXSCRnIZWGOec1zvc6krI6CRN1qGBwOv1rkVsjdf2la5IG4lcdjjrXXQTeZp6ruGCo6/SseyUDX71M4UhW571KlYbVypoN2bnS0SVszRZR89citVJzE2VbGOgNcuZhp/jW5twuI5cMMd66IkSRjPI7Y61oTEuMLS9gMdyig9fx/pVRoJ9O5R2mgPVepUVCzlflUgAc0+K/Kttzv9qVhliDUYpMBG7cgmr0d5uXazZ+lZM1tZ6g24MYZR/EhxUXlXtonzKZo/76f1FGjJ1OlhvRGANuBjvVlLpcZ3YyelcxHewnAaZRj1PSpxeQoTidMf71UokuTOphukwcg59KtDURCm4np19q41tbhhXCP5mO46fnWNqGvz3n7qOQqo67T1rWFPmdjnqVLLQ7PUfFbsTBbP8w4LZ6VkJdPLL5kjkk8kmuZhmIIy/PrWhbT75Qufqa7oQUVoebVqSk9TrdPfdIpJ4rfhmGQAR9K4+0ugsow3yjpXQRShSM8ZOasxsdvZyIbQFjztyPzrX04fvQ2fvkZI9K5mynUrGCcDyuRW3pdwWiTcfm649hUPZmiVmj0LTjc2kiNZOS8YyYu0qd/8al1DWInj81SQpHftWJpGrC31rTXkk2xhtrE9geD/ADr0LWPCcRhkeSyNxaOm+XyTwy/3x6GvLxOEVb1PToYl0n5GF4H1eyk1SW5eZQycKCa7q519FXcilx7V5pYfDCzR2u9H1OZ7aQ7lYNyvsa1U8I61an9zqsrezc158oU6XuzR2c9SrrBnVJ4lt2cCRJE/Cviv9q7WE1j416fZRPuS1tsn2JNfWEena9BIDJJHIoPORXwx8XdSfWP2gdblbGIGEQA7Yr08mo054lchwZnVqQoNTOUWSSN8q7D6Grtikl9qttC7M7SSqnJz1NUiOa6b4d2Dap8VNAsQu7zL2PI9gc19/N2TPikuZn6WeF9Oi07wDpViEUmO3RQG+lbqQ2QQBlXPsahgTZaW8Q4CoBwPapMIerL/AN8185J3dz2oqysfj+JCsLytgs3T2qnuzJvPJzUtzIWbYuPQAdqhYbY+v1NcJ6FhpbMw5+VDz71upcPqEAjWN2KphI40449f8awp/lfauTu54rd0gT2yx2rlh9pYIVHFRMqJkST3Wn333mDYIwelWr2aeXSAY5pGiYfdZs4rf1bwbqD2oZIpXSMBxOFJUqTyc4p0XgeaXwJdarBdeY8GQYwOo9qSlEpxlsYXg2VxeSL7g5HbtXqiWgNuJT85IwC/NeQ+GxJb6sM5w4xXsluzSWK4OPr2rmxOkro7sH8FhljEPtBXbg4+lZ/iVN2j3BwRhT19q2oMNIQJQDjsKy/EmxtJnPBJQjiudO7Ot7Gno5SbQYpTgsUB/Ssqzdm8YXEW35fKXP5mrPg+f7T4TiHXCbfyqDTgH8dXQIIxCp+nJpbNgnojA8ZRm1vLTUowOGKNUtjrttJEMyqD6E1q+LrBbzw/NF0K5YfUV5dZq0rMvIAraCUomFRuEj0gXkTqSrqd3fNMaVF4B6+nauEZLqPHlSuPoadHqeqxtsDGUDjDCrUOxPtTs/tIRso5FWI9XeNcbua4Y63fE+X5KbvSk+2atJ80hWFD3x0o9mR7Y79tXtGXM0MRPrjrWdeeJNMhJ2W8bORwAK4uWeUDLStIexPAqW0s/NfzpB065q400tzKVZvRI2m1C61JsYEcWc4XineasZWJSGPTNZz3I/1UXCL2psc7FWmJJK9Mdq6aaOacu5tSS+UfLUg+pHSrtrNsjyD1rnYJ2kXByT1q/DO23+lbnM3dnUWd5tdc4IrqLW48yyEhx8gANefQz7cFWrptMuz/AKsvjI70Ep6neWVwGeIHgNEVBNa9jeFH4I+5gD8a5W0uVlsYhwrxnpnt7Gt2F447ZJ2+/u9eMVnzK9mb8mlzq1vEkKI3DxgYI9a9a8MeNZjoR0nUvMwsW2G7RSwxj7r+gI718+JqTyXZfdtBODivUvAeqTR2cOomUYtZBBIMdY2659cdaiouVDi3JnY6BexpfedoiTPIT+8tMZR/Uj0Neh2Ih1Wx82KNopB1Vh0Pp7VwnjqRvC17Z6tpcccENzGD5luNuW75HTnrWdovjW/S5W6iucux+cP0cehrKpQjXjqioV3RlozutXX7Fpd1M42mONmyfpX5j61fw33xC13UJZMedeSYPsGr9Ojf6b4m0We0vZGjWaMxyKvYEY4NfE/xd/Zj8QeDILvxB4PdvEWigtLKqj/SYB1yVH3h7iqyagsHWcmxZpXeKpKKR4s0tsfuzKa9V/Zx0tNV/aC0joy24eY/gOK8JFzAGIlt5UxweOlbHh7xRd+GtXTVNC1a40+8UYEqHBx6V9NLGqa5VY8BYRwd9T9cwuH3DOAOoNPGMD5pPyr82dM/ac+KmnkKnieK6UdpoxXpGhftT/EO60hZbiXTN+4jkYz+tcUMPKbtE3qYpU1eSPkwckyt9BVeVnY7BxzU8kgwFHTOBVhNOmbRX1I7VjDheTyfpXlXseu1cs6dZeYEuZRiJDgv24psuqmXxFHcWrkJbEOuO+01Qu9VmOmJpi4WJHLsR1bNUrV1R5Jc8AUlC+rDmXQ++dL1Pw3f/Dq01CQ28dtPbBnfAC5Iwc14LNYFNe1Pw/ZXccVrfsRbzxsGUN2/w/GvNPD3i29m0VNAuriRreAkwRrnLZ6g47Vf095rbxHsaSSOQkMhJztbPFcns3Bs7PaKSRg6x4Y1jwr4hjg1BWRlfIfoHGeor0nT7jzNLjIbJK8Z9q7vxXpVn4s+Fv2uUf6RGn3wOQ69R9K808OTqNKC8sVbBzWdSXMtTehHldjftCuTgne3t0FZfiJmGlSkgZIIx7VqxSAzbVUBsZ45rI1//kGTlvmYjGf6Vit9TqlsR/DmYzeGJoyeYpCpx6Ve0gBvF2oyrk7I1XJ+prH+GpH9iakORif+lXvDN0g8X6rbMDuZFcHPoSD/ADqprVk0n7quampqXR1zxzgV59q2krbBr+3yozmRQOnvXo16oL4ByMZGeMVh3EKsjqVyGzkUqc7DqRUjhY72zdACwz6jmp/OtmIEK7j2NWp/CcU95iJ1hLnj0zTn8EatbSKvktID3Rq6VZ6nG+aOjMqTYspbEUbdc9Saq3Fwmz/WFyOx5ro18GXoYj7OWPqT0rOv9KezuIbePyi55kUfw/U1SZmzLgRppfNcbUUDGfWrE90FAhiJ2jqfU1DeTrHKVDZc8cdKdYWL6hc7DOkMa/ed/wCQ9a1XcybtoQy3GFwD+NXLZmnRLKAAtIeSah1yztra6xYtLJbqAN7jG49z+dQWqzBk8jO4962T0ujBrXU3bu1+x6msED7xt4xzj1qHznVtoQgVINO1GO3k1Rkby4WCsT9KiluYmt0wpDYyT7mnGVyXBFy3l+dQTk1u2M7bwwOFHGT3rmbd44f3shJ9BnFW4r95X4YBR0ArQzcT0bSruM20hY5YYOM/eHcV1Ok3dr9pNi2Wt5BujMnBJA6fzrynTdSeBTtI3Mfl55rrDesbVJ4xuVVDqpPK1hNO50U5Jo3hIYLlw6ldrHKN1Ueld14O8Qpp8k9rOBLa3A55rgRqaa9ZRoWRdQQY9PNGOmfWm+H9R+yaoILtDs3bSjdRTk+aOpKXK/I+lLPxRpnjD4fL4e1ANDLAB5NwT0ZTgfmKmsfC+jWUMbzXW9hgnLjpXNeAvEfhyxt7qK5gjMfnfK5jzwRkis7xpKses/adEmaSwuPmRQfuHutc8G78qdkVNK13qesQwaFPbNBpeoRwXqn5C0nDH+6am0NNWurmaNGTzoTtmiLD5ff3BrxvR7XXNQVZbaCTCn72MdK6yyTxLbXSXMMM4mK4JU/eA7GuhO2lzBq+tjP+Jn7J2keNdRbXdBlttCv5ctcIF/cyn1wPun9K+VPiR8DdY+Heqx2uvzQxRTf6m6AzFL7BumfbrX3r4Z8Q61OGd1kkjB2TI3JX6is/xDo9j4thvvCHiHT476xnGVDjJUHoynsRWfvX3NOZJbH5x/8ACv7yY5tZbScdtkgqM+B/EEJ2CznwP7hyK7H4rfDLWfhX44k0OeaRraT99Y3CkjzYieCfcdD9K5JNV1SJNhu55MfxbzW0YVd4s0apy3RygPmzDHRTV+8sr9dItZZpCIDlkjB7euKo2JIl7Hr1ro/EsjJY6XCuAht0yKxb1ElozkLnPnke1RDPl7fU0+5/4+DUlkiyXsSMMgtyK2WiuZ9TUsLaSy1WwKybZJGAPGMEnj+Yr6b074G3J8NprF1eyLeGAuqI2cN1+93r5knkfzIzn/Vt8vthuK+77DWLyP4Z6XMChZ7WPdleuQK48TN6NHXh43bTPGNN1GWz+Heu2l0Cr22coTnBx615h4NuPOs5S27l9xx6V2utzMo8UhAFE1u7Oo6E5rzjwJPIftKE8BQKxa91nTCXvJHfQOFfcQdxbgCs7W9v2CRdxPJyc/pV+35mjJ7tj9KoeIAF03j+6T+NYo6nsZ/w8cLo2r4ypFxx7cVpeGLBX1DUNYJ5c+SnsByT/KsrwWir4T1eVeGa4OT9FFdJ4bwvhG3IA+d3Le5zVVHqyafwofcyKJtnHTA96qSpuZu9Puxv8xz95ScEVCsjF0yeuM1mjUq3J2bTiuo0i6bUNMErthwdpI7Yrj9RdhlQej1qeHbmWPTJtpHDnHFbwOWqy34hu1stKcySsW/hVTjP4V5ze6gILR52IMs3PPWtTxVfXMt4yO/Awo9s1xN8zPdOrEkDpWsdTCb5URGSSa4L4LN1xXffDmw0iHxFHJ4j8toZVJjMjYRG/vH1xXG39lDYafp91AX8yVdzbjkZqnHcz/aA5kYkZIyeBXVKF1Y41Ozueh/EjXdEvdRh0jQ4ohY22cyxrzI1cPBfCCZGReVoEYayaUltxbnmo47WLDH5gQR3ohFJWCbbdzrZPFf2nwxJp/2XYZnLM6nFc89yA3yKD6Z7Vf0+wt5ZYI33bWRmOD3ArEbguRTiknoEm7ak7TFsEsetWIrjCkKfQfSs9mNSwMdrfWtrnNI3reZlKFDzniurlupIbaNc8Mgbj0rh7d2FupB5yBXTyyM7tExyqW/yj05qZPU2prQ1rS+ZXS7tiFkjbDgdfrXWxapb3tqs7RIZ15kj7j3Fed3mbTXpooCVUxqx+pAq5HczRQrcRuVkU5DDiplG+pUZ2PoX4V3mi3Ml1Hqbp5Mm0qsjbcNk17BBY+C2sj9jni81AWWMHg/hXyhoEzyae9zwrvgtt4GfWvUdHUyReYzvuIVshiOa5J0ry3NlNJWsdTefEq30yY2+lRRyg8jIwBz6VDH8VdUmVl8iKM54KDkV51Bbxz+MZbZshBKQNvBHNet6L4K0Fgtw8EjO3XL8VoowgtUY3nPqQ+FPiHeab4wF7cpvguvllB7+9ew3N1p0GvDVlnQW9xApUn+H1Fcdq/hDw/F4KuHisER4YyyOp5BrgLvWL+aysI5JyyiPp2NPSpqtCX+70epr/tLeDLf4g/C6PU9FMb6no7eaueN8LfeGf1r4vfwd4gjfaLMcd1OQa+6fCsrXmmz2tz+8ilRldWJ5G0189XEaxXs8KZCpIyL9AcCumjJwXKVC1TU//9k=" alt="Paulina Espinoza, asesora financiera" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <span class="absolute bottom-1 right-1 bg-emerald-500 text-white p-2 rounded-full text-xs border-2 border-white shadow">
+                                    <svg class="fa-svg " viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                                </span>
+                            </div>
+
+                            <h3 class="text-2xl font-heading font-bold text-slate-900 mt-3">Paulina Espinoza</h3>
+                            <p class="text-xs text-brand-green font-bold uppercase tracking-widest mt-0.5">Atención Directa y Personalizada</p>
+                            
+                            <div class="my-4 p-3.5 bg-slate-50 rounded-2xl border border-slate-200 text-left space-y-2 text-xs text-slate-600">
+                                <div class="flex items-center gap-2">
+                                    <svg class="fa-svg text-emerald-600 text-sm" viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                                    <span>Trámites rápidos con tu <strong>Talón e INE</strong></span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="fa-svg text-emerald-600 text-sm" viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                                    <span>Sin consultar buró riguroso</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <svg class="fa-svg text-emerald-600 text-sm" viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                                    <span>Descuento vía nómina o domiciliación fácil</span>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/525429488876?text=Hola%20Paulina%20Espinoza,%20quisiera%20solicitar%20informaci%C3%B3n" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold py-3.5 px-4 rounded-xl shadow transition flex items-center justify-center gap-2">
+                                <svg class="fa-svg text-xl" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp: 54 29 48 88 76
+                            </a>
+                            <span class="block text-[11px] text-slate-400 mt-2">Atención inmediata | WhatsApp Business Activo</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sectors & Convenios Section -->
+    <section id="convenios" class="py-16 bg-slate-100/70 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-burgundy font-heading font-bold text-xs tracking-widest uppercase bg-brand-burgundyLight px-3.5 py-1 rounded-full inline-block mb-2">Convenios Activos</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">¿Para quiénes tenemos créditos disponibles?</h2>
+                <p class="text-slate-600 mt-2 text-base">Contamos con convenios directos para jubilarte, pensionarte o si eres trabajador activo en instituciones estatales y federales.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-greenLight text-brand-green flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-brand-green group-hover:text-white transition-colors">
+                            <svg class="fa-svg " viewBox="0 0 640 512" aria-hidden="true"><path d="M0 24C0 10.7 10.7 0 24 0H616c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 48 0 37.3 0 24zM0 488c0-13.3 10.7-24 24-24H616c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM83.2 160a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM32 320c0-35.3 28.7-64 64-64h96c12.2 0 23.7 3.4 33.4 9.4c-37.2 15.1-65.6 47.2-75.8 86.6H64c-17.7 0-32-14.3-32-32zm461.6 32c-10.3-40.1-39.6-72.6-77.7-87.4c9.4-5.5 20.4-8.6 32.1-8.6h96c35.3 0 64 28.7 64 64c0 17.7-14.3 32-32 32H493.6zM391.2 290.4c32.1 7.4 58.1 30.9 68.9 61.6c3.5 10 5.5 20.8 5.5 32c0 17.7-14.3 32-32 32h-224c-17.7 0-32-14.3-32-32c0-11.2 1.9-22 5.5-32c10.5-29.7 35.3-52.8 66.1-60.9c7.8-2.1 16-3.1 24.5-3.1h96c7.4 0 14.7 .8 21.6 2.4zm44-130.4a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM321.6 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
+                        </div>
+                        <span class="text-xs font-bold text-brand-burgundy uppercase tracking-wider block mb-1">Pensionados y Jubilados</span>
+                        <h3 class="text-xl font-heading font-bold text-slate-900 mb-2">IMSS, ISSSTE, PEMEX e ISSEMyM</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Créditos especiales pensados para ti, con descuento vía nómina o bien domiciliado a tu cuenta de pensión.
+                        </p>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-brand-green" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Montos desde $5,000</li>
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-brand-green" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Plazos de 12 a 60 meses</li>
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-brand-green" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Trámite sencillo y seguro</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectSectorAndScroll('pensionados')" class="w-full bg-slate-100 hover:bg-brand-green hover:text-white text-slate-800 font-heading font-bold py-2.5 rounded-xl text-xs transition-colors">
+                        Cotizar en este sector &rarr;
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                            <svg class="fa-svg " viewBox="0 0 640 512" aria-hidden="true"><path d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"/></svg>
+                        </div>
+                        <span class="text-xs font-bold text-brand-burgundy uppercase tracking-wider block mb-1">Sector Educación</span>
+                        <h3 class="text-xl font-heading font-bold text-slate-900 mb-2">SEP y Maestros SNTE</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Atención a docentes y personal administrativo de la Secretaría de Educación Pública y SNTE.
+                        </p>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-amber-600" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Montos desde $5,000</li>
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-amber-600" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Plazos de 24 a 96 quincenas</li>
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-amber-600" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Descuento por nómina fácil</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectSectorAndScroll('sep')" class="w-full bg-slate-100 hover:bg-amber-600 hover:text-white text-slate-800 font-heading font-bold py-2.5 rounded-xl text-xs transition-colors">
+                        Cotizar en este sector &rarr;
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-rose-50 text-brand-burgundy flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-brand-burgundy group-hover:text-white transition-colors">
+                            <svg class="fa-svg " viewBox="0 0 512 512" aria-hidden="true"><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        </div>
+                        <span class="text-xs font-bold text-brand-burgundy uppercase tracking-wider block mb-1">Servidores Públicos</span>
+                        <h3 class="text-xl font-heading font-bold text-slate-900 mb-2">GEM, CDMX y Estatales</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Para personal de Gobierno del Estado de México (GEM), CDMX, policías estatales y trabajadores de gobierno.
+                        </p>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-brand-burgundy" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Montos inmediatos</li>
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-brand-burgundy" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Plazos de 24 a 96 quincenas</li>
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-brand-burgundy" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Mínima documentación</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectSectorAndScroll('gobierno')" class="w-full bg-slate-100 hover:bg-brand-burgundy hover:text-white text-slate-800 font-heading font-bold py-2.5 rounded-xl text-xs transition-colors">
+                        Cotizar en este sector &rarr;
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-700 flex items-center justify-center text-2xl font-bold mb-4 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                            <svg class="fa-svg " viewBox="0 0 448 512" aria-hidden="true"><path d="M96 128V70.2c0-13.3 8.3-25.3 20.8-30l96-36c7.2-2.7 15.2-2.7 22.5 0l96 36c12.5 4.7 20.8 16.6 20.8 30V128h-.3c.2 2.6 .3 5.3 .3 8v40c0 70.7-57.3 128-128 128s-128-57.3-128-128V136c0-2.7 .1-5.4 .3-8H96zm48 48c0 44.2 35.8 80 80 80s80-35.8 80-80V160H144v16zM111.9 327.7c10.5-3.4 21.8 .4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5C401 348.6 448 409.4 448 481.3c0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6zM208 48V64H192c-4.4 0-8 3.6-8 8V88c0 4.4 3.6 8 8 8h16v16c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8V96h16c4.4 0 8-3.6 8-8V72c0-4.4-3.6-8-8-8H240V48c0-4.4-3.6-8-8-8H216c-4.4 0-8 3.6-8 8z"/></svg>
+                        </div>
+                        <span class="text-xs font-bold text-brand-burgundy uppercase tracking-wider block mb-1">Sector Salud</span>
+                        <h3 class="text-xl font-heading font-bold text-slate-900 mb-2">IMSS Bienestar</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                            Convenios activos para trabajadores de la salud: Base y Confianza (claves 03, 27, 06 y 08).
+                        </p>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-teal-600" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Convenios vigentes activos</li>
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-teal-600" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Solo con Talón e INE</li>
+                            <li class="flex items-center gap-2"><svg class="fa-svg text-teal-600" viewBox="0 0 448 512" aria-hidden="true"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Respuesta en 24 horas</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectSectorAndScroll('bienestar')" class="w-full bg-slate-100 hover:bg-teal-600 hover:text-white text-slate-800 font-heading font-bold py-2.5 rounded-xl text-xs transition-colors">
+                        Cotizar en este sector &rarr;
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Loan Calculator Section -->
+    <section id="calculadora" class="py-16 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-brand-green font-heading font-bold text-xs tracking-widest uppercase bg-brand-greenLight px-3.5 py-1 rounded-full inline-block mb-2">Herramienta Interactiva</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">Simulador de Crédito</h2>
+                <p class="text-slate-600 mt-2">Calcula una estimación de tus pagos en tiempo real y envía el desglose directo a WhatsApp.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-brand-gold/10 rounded-full blur-2xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6">
+                        
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-slate-800 mb-2">
+                                <svg class="fa-svg text-brand-green mr-1.5" viewBox="0 0 384 512" aria-hidden="true"><path d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h96c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V112zM272 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16z"/></svg> 1. Selecciona tu Institución o Sector:
+                            </label>
+                            <select id="calc-sector" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-slate-800 font-semibold focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent transition-all shadow-sm">
+                                <option value="pensionados">Pensionados / Jubilados (IMSS, ISSSTE, PEMEX, ISSEMyM)</option>
+                                <option value="sep">Maestros y Personal SEP / SNTE</option>
+                                <option value="gobierno">Gobierno Estado de México (GEM) / CDMX / Estatales</option>
+                                <option value="bienestar">IMSS Bienestar (Trabajadores Salud - Base / Confianza)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-slate-800 mb-2">
+                                <svg class="fa-svg text-brand-green mr-1.5" viewBox="0 0 512 512" aria-hidden="true"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg> 2. Modalidad de Pago Deseada:
+                            </label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button type="button" id="btn-nomina" onclick="setModality('nomina')" class="py-2.5 px-4 rounded-xl border-2 font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all border-brand-green bg-brand-greenLight text-brand-green">
+                                    <svg class="fa-svg " viewBox="0 0 384 512" aria-hidden="true"><path d="M14 2.2C22.5-1.7 32.5-.3 39.6 5.8L80 40.4 120.4 5.8c9-7.7 22.3-7.7 31.2 0L192 40.4 232.4 5.8c9-7.7 22.3-7.7 31.2 0L304 40.4 344.4 5.8c7.1-6.1 17.1-7.5 25.6-3.6s14 12.4 14 21.8V488c0 9.4-5.5 17.9-14 21.8s-18.5 2.5-25.6-3.6L304 471.6l-40.4 34.6c-9 7.7-22.3 7.7-31.2 0L192 471.6l-40.4 34.6c-9 7.7-22.3 7.7-31.2 0L80 471.6 39.6 506.2c-7.1 6.1-17.1 7.5-25.6 3.6S0 497.4 0 488V24C0 14.6 5.5 6.1 14 2.2zM96 144c-8.8 0-16 7.2-16 16s7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96zM80 352c0 8.8 7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96c-8.8 0-16 7.2-16 16zM96 240c-8.8 0-16 7.2-16 16s7.2 16 16 16H288c8.8 0 16-7.2 16-16s-7.2-16-16-16H96z"/></svg> Vía Nómina
+                                </button>
+                                <button type="button" id="btn-domiciliado" onclick="setModality('domiciliado')" class="py-2.5 px-4 rounded-xl border-2 font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all border-slate-300 bg-white text-slate-600 hover:border-slate-400">
+                                    <svg class="fa-svg " viewBox="0 0 512 512" aria-hidden="true"><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg> Domiciliado
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-sm font-heading font-bold text-slate-800">
+                                    <svg class="fa-svg text-brand-green mr-1.5" viewBox="0 0 512 512" aria-hidden="true"><path d="M512 80c0 18-14.3 34.6-38.4 48c-29.1 16.1-72.5 27.5-122.3 30.9c-3.7-1.8-7.4-3.5-11.3-5C300.6 137.4 248.2 128 192 128c-8.3 0-16.4 .2-24.5 .6l-1.1-.6C142.3 114.6 128 98 128 80c0-44.2 86-80 192-80S512 35.8 512 80zM160.7 161.1c10.2-.7 20.7-1.1 31.3-1.1c62.2 0 117.4 12.3 152.5 31.4C369.3 204.9 384 221.7 384 240c0 4-.7 7.9-2.1 11.7c-4.6 13.2-17 25.3-35 35.5c0 0 0 0 0 0c-.1 .1-.3 .1-.4 .2l0 0 0 0c-.3 .2-.6 .3-.9 .5c-35 19.4-90.8 32-153.6 32c-59.6 0-112.9-11.3-148.2-29.1c-1.9-.9-3.7-1.9-5.5-2.9C14.3 274.6 0 258 0 240c0-34.8 53.4-64.5 128-75.4c10.5-1.5 21.4-2.7 32.7-3.5zM416 240c0-21.9-10.6-39.9-24.1-53.4c28.3-4.4 54.2-11.4 76.2-20.5c16.3-6.8 31.5-15.2 43.9-25.5V176c0 19.3-16.5 37.1-43.8 50.9c-14.6 7.4-32.4 13.7-52.4 18.5c.1-1.8 .2-3.5 .2-5.3zm-32 96c0 18-14.3 34.6-38.4 48c-1.8 1-3.6 1.9-5.5 2.9C304.9 404.7 251.6 416 192 416c-62.8 0-118.6-12.6-153.6-32C14.3 370.6 0 354 0 336V300.6c12.5 10.3 27.6 18.7 43.9 25.5C83.4 342.6 135.8 352 192 352s108.6-9.4 148.1-25.9c7.8-3.2 15.3-6.9 22.4-10.9c6.1-3.4 11.8-7.2 17.2-11.2c1.5-1.1 2.9-2.3 4.3-3.4V304v5.7V336zm32 0V304 278.1c19-4.2 36.5-9.5 52.1-16c16.3-6.8 31.5-15.2 43.9-25.5V272c0 10.5-5 21-14.9 30.9c-16.3 16.3-45 29.7-81.3 38.4c.1-1.7 .2-3.5 .2-5.3zM192 448c56.2 0 108.6-9.4 148.1-25.9c16.3-6.8 31.5-15.2 43.9-25.5V432c0 44.2-86 80-192 80S0 476.2 0 432V396.6c12.5 10.3 27.6 18.7 43.9 25.5C83.4 438.6 135.8 448 192 448z"/></svg> 3. Monto a solicitar:
+                                </label>
+                                <span id="amount-display" class="text-2xl font-heading font-extrabold text-brand-green">$25,000 MXN</span>
+                            </div>
+                            <input type="range" id="amount-range" min="5000" max="150000" step="5000" value="25000" class="w-full h-3 bg-slate-200 rounded-lg appearance-none cursor-pointer custom-slider">
+                            <div class="flex justify-between text-xs text-slate-400 mt-1 font-semibold">
+                                <span>$5,000</span>
+                                <span>$50,000</span>
+                                <span>$100,000</span>
+                                <span>$150,000+</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-heading font-bold text-slate-800 mb-2">
+                                <svg class="fa-svg text-brand-green mr-1.5" viewBox="0 0 448 512" aria-hidden="true"><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"/></svg> 4. Plazo estimado:
+                            </label>
+                            <div id="term-container" class="grid grid-cols-4 gap-2"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="lg:col-span-5 bg-gradient-to-br from-brand-greenDark to-brand-green text-white rounded-2xl p-6 shadow-xl relative flex flex-col justify-between h-full border border-emerald-500/20">
+                        <div>
+                            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                                <span class="text-xs uppercase font-bold text-emerald-300 tracking-wider">Resumen de Cotización</span>
+                                <span class="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Sin compromiso</span>
+                            </div>
+
+                            <div class="py-6 text-center">
+                                <span class="text-xs text-emerald-200 block mb-1" id="payment-frequency-label">Pago estimado por Quincena</span>
+                                <span id="calculated-payment" class="text-4xl sm:text-5xl font-heading font-extrabold text-brand-gold tracking-tight">$845</span>
+                                <span class="text-xs text-emerald-200 block mt-1">pesos aproximadamente*</span>
+                            </div>
+
+                            <div class="space-y-2.5 text-xs text-emerald-100 bg-black/15 p-4 rounded-xl border border-white/10 mb-6">
+                                <div class="flex justify-between">
+                                    <span class="opacity-80">Monto del crédito:</span>
+                                    <strong id="summary-amount" class="text-white font-bold">$25,000 MXN</strong>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="opacity-80">Plazo elegido:</span>
+                                    <strong id="summary-term" class="text-white font-bold">48 Quincenas</strong>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="opacity-80">Modalidad:</span>
+                                    <strong id="summary-modality" class="text-white font-bold">Vía Nómina</strong>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="opacity-80">Asesora asignada:</span>
+                                    <strong class="text-brand-gold font-bold">Paulina Espinoza</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button id="calc-send-wa" onclick="sendCalculatorToWhatsApp()" class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-heading font-extrabold py-3.5 px-4 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-sm sm:text-base">
+                                <svg class="fa-svg text-2xl" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Enviar Cotización a Paulina
+                            </button>
+                            <p class="text-[11px] text-emerald-200/70 text-center mt-2.5 leading-tight">
+                                *Sujeto a aprobación de crédito y capacidad de pago según talón.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Grid Section -->
+    <section id="beneficios" class="py-16 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brand-gold font-heading font-bold text-xs tracking-widest uppercase bg-white/10 px-3.5 py-1 rounded-full inline-block mb-2">¿Por qué elegirnos?</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white">Beneficios que se adaptan a tus necesidades</h2>
+                <p class="text-slate-300 mt-2">Transparencia, rapidez y trato humano garantizado en cada solicitud.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-6 text-center hover:border-brand-gold/50 transition">
+                    <div class="w-14 h-14 bg-brand-gold/20 text-brand-gold rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                        <svg class="fa-svg " viewBox="0 0 448 512" aria-hidden="true"><path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg mb-2 text-white">Respuesta en &lt; 24 Hrs</h3>
+                    <p class="text-slate-300 text-sm">Evaluamos tu solicitud de forma rápida para que dispongas de tu efectivo sin esperas innecesarias.</p>
+                </div>
+
+                <div class="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-6 text-center hover:border-brand-gold/50 transition">
+                    <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                        <svg class="fa-svg " viewBox="0 0 384 512" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM80 64h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16s7.2-16 16-16zm16 96H288c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V256c0-17.7 14.3-32 32-32zm0 32v64H288V256H96zM240 416h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg mb-2 text-white">Documentación Sencilla</h3>
+                    <p class="text-slate-300 text-sm">Sin papeleos engorrosos. En la mayoría de los casos solo requerimos tu Identificación (INE) y Talón de Pago.</p>
+                </div>
+
+                <div class="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-6 text-center hover:border-brand-gold/50 transition">
+                    <div class="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                        <svg class="fa-svg " viewBox="0 0 576 512" aria-hidden="true"><path d="M148 76.6C148 34.3 182.3 0 224.6 0c20.3 0 39.8 8.1 54.1 22.4l9.3 9.3 9.3-9.3C311.6 8.1 331.1 0 351.4 0C393.7 0 428 34.3 428 76.6c0 20.3-8.1 39.8-22.4 54.1L302.1 234.1c-7.8 7.8-20.5 7.8-28.3 0L170.4 130.7C156.1 116.4 148 96.9 148 76.6zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg mb-2 text-white">Sin Anticipos ni Cuotas</h3>
+                    <p class="text-slate-300 text-sm">Trámite 100% transparente. Nunca pedimos depósitos ni dinero por adelantado para autorizar tu crédito.</p>
+                </div>
+
+                <div class="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-6 text-center hover:border-brand-gold/50 transition">
+                    <div class="w-14 h-14 bg-rose-500/20 text-rose-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                        <svg class="fa-svg " viewBox="0 0 640 512" aria-hidden="true"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c1.8 0 3.5-.2 5.3-.5c-76.3-55.1-99.8-141-103.1-200.2c-16.1-4.8-33.1-7.3-50.7-7.3H178.3zm308.8-78.3l-120 48C358 277.4 352 286.2 352 296c0 63.3 25.9 168.8 134.8 214.2c5.9 2.5 12.6 2.5 18.5 0C614.1 464.8 640 359.3 640 296c0-9.8-6-18.6-15.1-22.3l-120-48c-5.7-2.3-12.1-2.3-17.8 0zM591.4 312c-3.9 50.7-27.2 116.7-95.4 149.7V273.8L591.4 312z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-lg mb-2 text-white">Atención Personalizada</h3>
+                    <p class="text-slate-300 text-sm">Paulina Espinoza te acompaña paso a paso, asegurando un trato cálido, claro y con absoluta discreción.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Checklist Section -->
+    <section id="requisitos" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brand-burgundy font-heading font-bold text-xs tracking-widest uppercase bg-brand-burgundyLight px-3.5 py-1 rounded-full inline-block">Sin Enredos</span>
+                    <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-slate-900">¿Qué requisitos necesitas para tramitar tu crédito?</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Queremos que obtengas tu préstamo de la forma más rápida y sin complicaciones. Si perteneces a alguno de los sectores participantes, solo necesitas reunir lo siguiente:
+                    </p>
+
+                    <div class="pt-2">
+                        <a href="https://wa.me/525429488876?text=Hola%20Paulina,%20quiero%20enviar%20mis%20documentos%20para%20revisi%C3%B3n" target="_blank" class="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-greenDark text-white font-heading font-bold px-6 py-3.5 rounded-xl shadow-md transition">
+                            <svg class="fa-svg text-lg text-emerald-300" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Enviar Documentos por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4">
+                    
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold">
+                            <svg class="fa-svg text-lg" viewBox="0 0 576 512" aria-hidden="true"><path d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-900 text-base">1. Identificación Oficial (INE)</h4>
+                            <p class="text-xs text-slate-500 mt-1">Vigente y legible por ambos lados.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold">
+                            <svg class="fa-svg text-lg" viewBox="0 0 384 512" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 80c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm128 72c8.8 0 16 7.2 16 16v17.3c8.5 1.2 16.7 3.1 24.1 5.1c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-11.1-3-22-5.2-32.1-5.3c-8.4-.1-17.4 1.8-23.6 5.5c-5.7 3.4-8.1 7.3-8.1 12.8c0 3.7 1.3 6.5 7.3 10.1c6.9 4.1 16.6 7.1 29.2 10.9l.5 .1 0 0 0 0c11.3 3.4 25.3 7.6 36.3 14.6c12.1 7.6 22.4 19.7 22.7 38.2c.3 19.3-9.6 33.3-22.9 41.6c-7.7 4.8-16.4 7.6-25.1 9.1V440c0 8.8-7.2 16-16 16s-16-7.2-16-16V422.2c-11.2-2.1-21.7-5.7-30.9-8.9l0 0c-2.1-.7-4.2-1.4-6.2-2.1c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c2.5 .8 4.8 1.6 7.1 2.4l0 0 0 0 0 0c13.6 4.6 24.6 8.4 36.3 8.7c9.1 .3 17.9-1.7 23.7-5.3c5.1-3.2 7.9-7.3 7.8-14c-.1-4.6-1.8-7.8-7.7-11.6c-6.8-4.3-16.5-7.4-29-11.2l-1.6-.5 0 0c-11-3.3-24.3-7.3-34.8-13.7c-12-7.2-22.6-18.9-22.7-37.3c-.1-19.4 10.8-32.8 23.8-40.5c7.5-4.4 15.8-7.2 24.1-8.7V232c0-8.8 7.2-16 16-16z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-900 text-base">2. Último Talón de Pago</h4>
+                            <p class="text-xs text-slate-500 mt-1">Comprobante reciente de nómina o pensión.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold">
+                            <svg class="fa-svg text-lg" viewBox="0 0 576 512" aria-hidden="true"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c.2 35.5-28.5 64.3-64 64.3H128.1c-35.3 0-64-28.7-64-64V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24zM352 224a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zm-96 96c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H256z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-900 text-base">3. Comprobante de Domicilio</h4>
+                            <p class="text-xs text-slate-500 mt-1">Luz, agua o teléfono no mayor a 3 meses.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 font-bold">
+                            <svg class="fa-svg text-lg" viewBox="0 0 512 512" aria-hidden="true"><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160v8c0 13.3 10.7 24 24 24H456c13.3 0 24-10.7 24-24v-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224H64V420.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512H480c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1V224H384V416H344V224H280V416H232V224H168V416H128V224zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-900 text-base">4. Estado de Cuenta o Clabe</h4>
+                            <p class="text-xs text-slate-500 mt-1">Para realizar el depósito directo de tu préstamo.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="preguntas" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-green font-heading font-bold text-xs tracking-widest uppercase bg-brand-greenLight px-3.5 py-1 rounded-full inline-block mb-2">Resuelve tus dudas</span>
+                <h2 class="text-3xl font-heading font-extrabold text-slate-900">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-4">
+
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full text-left p-5 font-heading font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                        <span>¿Revisan Buró de Crédito?</span>
+                        <svg id="faq-icon-1" class="fa-svg text-slate-500 transition-transform" viewBox="0 0 512 512" aria-hidden="true"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    </button>
+                    <div id="faq-ans-1" class="hidden p-5 text-sm text-slate-600 bg-white border-t border-slate-100 leading-relaxed">
+                        Contamos con esquemas flexibles con descuento vía nómina o domiciliación donde el buró de crédito no es determinante para la autorización de tu monto.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full text-left p-5 font-heading font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                        <span>¿Cuánto tiempo tarda en autorizarse el préstamo?</span>
+                        <svg id="faq-icon-2" class="fa-svg text-slate-500 transition-transform" viewBox="0 0 512 512" aria-hidden="true"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    </button>
+                    <div id="faq-ans-2" class="hidden p-5 text-sm text-slate-600 bg-white border-t border-slate-100 leading-relaxed">
+                        Generalmente entregamos dictamen o respuesta en menos de 24 horas hábiles una vez recibida tu identificación y talón de pago completo.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full text-left p-5 font-heading font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                        <span>¿Tengo que pagar algún tipo de anticipo?</span>
+                        <svg id="faq-icon-3" class="fa-svg text-slate-500 transition-transform" viewBox="0 0 512 512" aria-hidden="true"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    </button>
+                    <div id="faq-ans-3" class="hidden p-5 text-sm text-slate-600 bg-white border-t border-slate-100 leading-relaxed">
+                        <strong>¡Jamás!</strong> Ninguno de nuestros trámites solicita pagos, depósitos adelantados o gestiones con cobro previo. Todo el proceso de asesoría con Paulina Espinoza es 100% gratuito.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full text-left p-5 font-heading font-bold text-slate-800 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition">
+                        <span>¿Cómo realizo mis pagos?</span>
+                        <svg id="faq-icon-4" class="fa-svg text-slate-500 transition-transform" viewBox="0 0 512 512" aria-hidden="true"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    </button>
+                    <div id="faq-ans-4" class="hidden p-5 text-sm text-slate-600 bg-white border-t border-slate-100 leading-relaxed">
+                        Los pagos son cómodos y no necesitas acudir al banco: se descuentan automáticamente en tu nómina (quincenal) o vía domiciliación en la cuenta donde recibes tu pago o pensión.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Direct Contact Banner -->
+    <section class="py-16 bg-gradient-to-r from-brand-greenDark via-brand-green to-emerald-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="bg-white/20 text-brand-gold text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full inline-block mb-4">¿Tienes dudas o deseas iniciar hoy?</span>
+            <h2 class="text-3xl sm:text-5xl font-heading font-extrabold text-white max-w-3xl mx-auto">
+                Solicita más información ¡Sin ningún compromiso!
+            </h2>
+            <p class="text-emerald-100 text-lg mt-3 max-w-2xl mx-auto">
+                Escribe directamente a Paulina Espinoza en WhatsApp para recibir atención personalizada de inmediato.
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/525429488876?text=Hola%20Paulina%20Espinoza,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20para%20un%20cr%C3%A9dito" target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-heading font-extrabold text-lg px-8 py-4 rounded-2xl shadow-xl transition transform hover:-translate-y-1 flex items-center gap-3">
+                    <svg class="fa-svg text-2xl" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Mandar WhatsApp al 54 29 48 88 76
+                </a>
+            </div>
+            <div class="mt-4 text-xs text-emerald-200">
+                Contacto Asesora: <strong class="text-white">Paulina Espinoza</strong> | Tel / WA: <strong>54 29 48 88 76</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                <div>
+                    <span class="text-white font-heading font-bold text-base block">Paulina Espinoza - Asesoría Financiera</span>
+                    <p class="text-slate-500 mt-1">Créditos Vía Nómina y Domiciliados para Jubilados, Pensionados y Servidores Públicos en México.</p>
+                </div>
+                <div class="text-slate-400 font-semibold">
+                    <span>Atención de Lunes a Sábado</span>
+                    <span class="block text-emerald-400">WhatsApp: 54 29 48 88 76</span>
+                </div>
+            </div>
+            <div class="border-t border-slate-900 mt-8 pt-6 text-center text-slate-600 text-[11px]">
+                &copy; <span id="year"></span> Paulina Espinoza. Todos los derechos reservados. Página informativa para trámites de crédito en instituciones autorizadas.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Fixed Button -->
+    <a href="https://wa.me/525429488876?text=Hola%20Paulina%20Espinoza,%20vi%20tu%20p%C3%A1gina%20web%20y%20me%20interesa%20un%20cr%C3%A9dito" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center group" title="Contactar a Paulina Espinoza por WhatsApp">
+        <svg class="fa-svg text-3xl" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold font-heading pl-0 group-hover:pl-2">
+            Escribir a Paulina
+        </span>
+    </a>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        let currentModality = 'nomina';
+        let currentTerm = 48;
+
+        const termsNomina = [24, 36, 48, 72, 96];
+        const termsDomiciliado = [12, 24, 36, 48, 60];
+
+        const sectorNames = {
+            'pensionados': 'Pensionados / Jubilados (IMSS, ISSSTE, PEMEX, ISSEMyM)',
+            'sep': 'Maestros y Personal SEP / SNTE',
+            'gobierno': 'Gobierno del Estado de México / CDMX / Estatales',
+            'bienestar': 'IMSS Bienestar (Trabajadores de la salud)'
+        };
+
+        const rangeInput = document.getElementById('amount-range');
+        const amountDisplay = document.getElementById('amount-display');
+        const calcSector = document.getElementById('calc-sector');
+        const termContainer = document.getElementById('term-container');
+
+        function renderTermButtons() {
+            termContainer.innerHTML = '';
+            const termsList = currentModality === 'nomina' ? termsNomina : termsDomiciliado;
+            const unit = currentModality === 'nomina' ? 'Quincenas' : 'Meses';
+
+            if (!termsList.includes(currentTerm)) {
+                currentTerm = termsList[2];
+            }
+
+            termsList.forEach(term => {
+                const isSelected = term === currentTerm;
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = `py-2 rounded-xl text-xs font-heading font-bold border transition-all ${
+                    isSelected 
+                    ? 'bg-brand-green text-white border-brand-green shadow-sm' 
+                    : 'bg-white text-slate-700 border-slate-300 hover:border-brand-green'
+                }`;
+                btn.textContent = `${term} ${unit.charAt(0).toUpperCase() + unit.slice(1, 3)}`;
+                btn.onclick = () => {
+                    currentTerm = term;
+                    renderTermButtons();
+                    calculatePayment();
+                };
+                termContainer.appendChild(btn);
+            });
+        }
+
+        function setModality(modality) {
+            currentModality = modality;
+            const btnNomina = document.getElementById('btn-nomina');
+            const btnDomiciliado = document.getElementById('btn-domiciliado');
+            const active = 'py-2.5 px-4 rounded-xl border-2 font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all border-brand-green bg-brand-greenLight text-brand-green';
+            const inactive = 'py-2.5 px-4 rounded-xl border-2 font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all border-slate-300 bg-white text-slate-600 hover:border-slate-400';
+
+            if (modality === 'nomina') {
+                btnNomina.className = active;
+                btnDomiciliado.className = inactive;
+            } else {
+                btnDomiciliado.className = active;
+                btnNomina.className = inactive;
+            }
+
+            renderTermButtons();
+            calculatePayment();
+        }
+
+        function calculatePayment() {
+            const amount = parseInt(rangeInput.value);
+            amountDisplay.textContent = `$${amount.toLocaleString('es-MX')} MXN`;
+
+            let monthlyFactor = currentModality === 'nomina' ? 0.024 : 0.028;
+            let totalPeriods = currentTerm;
+            
+            let payment = 0;
+            if (currentModality === 'nomina') {
+                let totalAmountWithInterest = amount * (1 + (monthlyFactor * (totalPeriods / 2)));
+                payment = Math.round(totalAmountWithInterest / totalPeriods);
+                document.getElementById('payment-frequency-label').textContent = 'Pago estimado por Quincena';
+                document.getElementById('summary-term').textContent = `${currentTerm} Quincenas`;
+                document.getElementById('summary-modality').textContent = 'Vía Nómina';
+            } else {
+                let totalAmountWithInterest = amount * (1 + (monthlyFactor * totalPeriods));
+                payment = Math.round(totalAmountWithInterest / totalPeriods);
+                document.getElementById('payment-frequency-label').textContent = 'Pago estimado por Mes';
+                document.getElementById('summary-term').textContent = `${currentTerm} Meses`;
+                document.getElementById('summary-modality').textContent = 'Domiciliado';
+            }
+
+            document.getElementById('calculated-payment').textContent = `$${payment.toLocaleString('es-MX')}`;
+            document.getElementById('summary-amount').textContent = `$${amount.toLocaleString('es-MX')} MXN`;
+        }
+
+        function sendCalculatorToWhatsApp() {
+            const sectorText = sectorNames[calcSector.value];
+            const amount = parseInt(rangeInput.value).toLocaleString('es-MX');
+            const modalityText = currentModality === 'nomina' ? 'Vía Nómina' : 'Domiciliado';
+            const termText = `${currentTerm} ${currentModality === 'nomina' ? 'Quincenas' : 'Meses'}`;
+            const payment = document.getElementById('calculated-payment').textContent;
+
+            const message = `Hola Paulina Espinoza, me interesa solicitar información para un crédito.
+📌 *Desglose de Cotización:*
+• *Sector/Institución:* ${sectorText}
+• *Monto solicitado:* $${amount} MXN
+• *Modalidad:* ${modalityText}
+• *Plazo:* ${termText}
+• *Pago estimado:* ${payment}
+
+¿Podrías indicarme cuáles son los pasos a seguir? Quedo al pendiente.`;
+
+            window.open(`https://wa.me/525429488876?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        function selectSectorAndScroll(sectorKey) {
+            calcSector.value = sectorKey;
+            calculatePayment();
+            document.getElementById('calculadora').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            ans.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        rangeInput.addEventListener('input', calculatePayment);
+        calcSector.addEventListener('change', calculatePayment);
+
+        window.onload = function() {
+            renderTermButtons();
+            calculatePayment();
+        };
+    </script>
+</body>
+</html>
